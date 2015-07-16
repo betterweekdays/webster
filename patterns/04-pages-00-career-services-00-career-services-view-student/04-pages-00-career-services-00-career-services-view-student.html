@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="pl">
 	<head>
-		<title>Profile View: Julie Frost</title>
+		<title>Profile View: Sonya Frost</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
@@ -41,7 +41,7 @@
 		<!-- End Pattern Lab -->
 	
 	</head>
-	<body class="home" id="">
+	<body class="home fixed-header" id="">
 		<div id="theme-wrapper">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
@@ -100,16 +100,22 @@
                                             <span>Dashboard</span>
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-active/04-pages-00-career-services-00-career-services-active.html">
-                                            <i class="fa fa-bar-chart-o"></i>
-                                            <span>Active Students</span>
-                                        </a>
-                                    </li>
                                     <li class="active">
                                         <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
                                             <i class="fa fa-users"></i>
                                             <span>Browse Students</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-resources.html">
+                                            <i class="fa fa-info-circle"></i>
+                                            <span>Help &amp; Resources</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="fa fa-power-off"></i>
+                                            <span>Logout</span>
                                         </a>
                                     </li>
                             </ul>
@@ -124,10 +130,10 @@
                             <div class="col-lg-12">
                                 <ol class="breadcrumb">
                                     <li><a href="#">Home</a></li>
-                                    <li class="active"><span>Profile View: Julie Frost</span></li>
+                                    <li class="active"><span>Profile View: Sonya Frost</span></li>
                                 </ol>
 
-                                <h1>Profile View: Julie Frost</h1>
+                                <h1>Profile View: Sonya Frost</h1>
                             </div>
                         </div>
 
@@ -309,50 +315,16 @@
 	
 
 
-<!-- uservoice -->
+<!-- intercom -->
 <script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/e84pqVIXXhiC7MBpHaP8Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-    //
-    // UserVoice Javascript SDK developer documentation:
-    // https://www.uservoice.com/o/javascript-sdk
-    //
-
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#448dd6',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
-
-    // Identify the user and pass traits
-    // To enable, replace sample data with actual user traits and uncomment the line
-    UserVoice.push(['identify', {
-        //email:      'john.doe@example.com', // User’s email address
-        //name:       'John Doe', // User’s real name
-        //created_at: 1364406966, // Unix timestamp for the date the user signed up
-        //id:         123, // Optional: Unique id of the user (if set, this should not change)
-        //type:       'Owner', // Optional: segment your users by type
-        //account: {
-        //  id:           123, // Optional: associate multiple users with a single account
-        //  name:         'Acme, Co.', // Account name
-        //  created_at:   1364406966, // Unix timestamp for the date the account was created
-        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-        //  ltv:          1495.00, // Decimal; lifetime value of the account
-        //  plan:         'Enhanced' // Plan name for the account
-        //}
-    }]);
-
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-    // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
 </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

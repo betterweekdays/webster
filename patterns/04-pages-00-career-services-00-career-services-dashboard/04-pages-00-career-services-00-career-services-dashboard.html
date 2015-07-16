@@ -40,7 +40,7 @@
 		<!-- End Pattern Lab -->
 	
 	</head>
-	<body class="home" id="">
+	<body class="home fixed-header" id="">
 		<div id="theme-wrapper">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
@@ -100,15 +100,21 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-active/04-pages-00-career-services-00-career-services-active.html">
-                                            <i class="fa fa-bar-chart-o"></i>
-                                            <span>Active Students</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
                                         <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
                                             <i class="fa fa-users"></i>
                                             <span>Browse Students</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-resources.html">
+                                            <i class="fa fa-info-circle"></i>
+                                            <span>Help &amp; Resources</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="fa fa-power-off"></i>
+                                            <span>Logout</span>
                                         </a>
                                     </li>
                             </ul>
@@ -132,160 +138,133 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                            <div class="main-box clearfix">
-                                <header class="main-box-header clearfix">
-                                    <h2></h2>
-                                </header>
-
-                                <div class="main-box-body clearfix">
-                                    <div>
-                                        <p>1 / 5 Completed. <a href="#"></a></p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                                            <span class="sr-only">20% Complete</span>
-                                        </div>
-                                    </div>
+                                <div class="alert alert-success">
+                                    <i class="fa fa-check fa-fw fa-lg"></i>
+                                    Welcome back! Did you know we scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday for your students?
                                 </div>
-                            </div>                            </div>
+                            </div>
                         </div>
 
                         <div class="row">
-                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                    <div class="main-box infographic-box">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-active/04-pages-00-career-services-00-career-services-active.html">
-                                            <i class="fa fa-bar-chart-o purple-bg"></i>
-                                            <span class="headline">Active Students</span>
-                                        </a>
-                                        <span class="value">
-                                            <span class="timer" data-from="0" data-to="440" data-speed="900" data-refresh-interval="60">
-                                                440
-                                            </span>
-                                        </span>
-                                        <span class="small text-right num-label">in last 7 days (↑ 5.5%), 30 days (↓ 14.6%)</span>
+                            <div class="col-lg-12">
+                                <div class="main-box clearfix text-center">
+                                    <header class="main-box-header clearfix">
+                                        <h2 class="giant">I want to see a list of...</h2>
+                                    </header>
+                                    <div class="main-box-body clearfix">
+                                        <form role="form" class="form-inline giant" action="#">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                        <option value="1">...students who logged-in and set a password (Active)</option>
+                                                        <option value="1">...students who get automated daily job leads (Job Matched)</option>
+                                                        <option value="1">...students that viewed at least one job (Viewed a Job)</option>
+                                                        <option value="1">...students who chose 'Apply' on a job lead (Applied)</option>
+                                                        <option value="1">...all of my students' activity (All Students)</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-info" onclick="window.location='../../patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html';">Go</button>
+                                        </form>
+                                        <p class="text-left"><a href="#">[x] Hide This</a></p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                    <div class="main-box infographic-box">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-active/04-pages-00-career-services-00-career-services-active.html">
-                                            <i class="fa fa-money green-bg"></i>
-                                            <span class="headline">Job Matched Students</span>
-                                        </a>
-                                        <span class="value">
-                                            <span class="timer" data-from="0" data-to="314" data-speed="900" data-refresh-interval="60">
-                                                314
-                                            </span>
-                                        </span>
-                                        <span class="small text-right num-label">in last 7 days (↑ 8.5%), 30 days (↓ 4.6%)</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                    <div class="main-box infographic-box">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-active/04-pages-00-career-services-00-career-services-active.html">
-                                            <i class="fa fa-bullhorn red-bg"></i>
-                                            <span class="headline">Students who Viewed a Job</span>
-                                        </a>
-                                        <span class="value">
-                                            <span class="timer" data-from="0" data-to="274" data-speed="900" data-refresh-interval="60">
-                                                274
-                                            </span>
-                                        </span>
-                                        <span class="small text-right num-label">in last 7 days (↑ 0.5%), 30 days (↓ 1.6%)</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                    <div class="main-box infographic-box">
-                                        <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
-                                            <i class="fa fa-users emerald-bg"></i>
-                                            <span class="headline">Total Students</span>
-                                        </a>
-                                        <span class="value">
-                                            <span class="timer" data-from="0" data-to="1000" data-speed="900" data-refresh-interval="60">
-                                                1000
-                                            </span>
-                                        </span>
-                                        <span class="small text-right num-label">in last 7 days (↑ 5.5%), 30 days (↓ 14.6%)</span>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="main-box clearfix">
-                            <header class="main-box-header clearfix">
-                                <h2>Helpful Articles</h2>
-                            </header>
-                            <div class="main-box-body clearfix">
-                                <div class="list-group">
-                                        <a href="http://blog.betterweekdays.com/making-super-heroes-out-of-career-services-professionals/ " class="list-group-item">
-                                            <h4 class="list-group-item-heading">Making Super Heroes out of Career Services Professionals </h4>
-                                            <p class="list-group-item-text">Achieving a college degree requires a significant commitment of time and money. And what do students expect to see as a return on their investment? A job.</p>
-                                            <p class="small">Source: Better Weekdays</p>
-                                        </a>
-                                        <a href="http://blog.betterweekdays.com/how-to-make-your-career-center-a-netflix-not-a-blockbuster/ " class="list-group-item">
-                                            <h4 class="list-group-item-heading">How to make your Career Center a Netflix, NOT a Blockbuster </h4>
-                                            <p class="list-group-item-text">We all know the sad story of Blockbuster – Once the king of home entertainment, it spiraled into a tunnel of no return, and now it’s nothing but a memory to most. Unfortunately, today’s college career centers could be heading down an eerily similar road as Blockbuster.</p>
-                                            <p class="small">Source: Better Weekdays</p>
-                                        </a>
-                                </div>                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="main-box clearfix">
-                            <header class="main-box-header clearfix">
-                                <h2>Helpful Student Engagement Tips</h2>
-                            </header>
-
-                            <div class="main-box-body clearfix">
-                                <div class="panel-group accordion" id="accordion">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                        How can I increase students creating a resume?
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    Hold a raffle for students and offer a gift card as a prize.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                        What is the best way to keep students engaged?
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    Lorem Ipsum
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                        What are the best tips to share with students during interviews?
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    Lorem Ipsum
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-
                             </div>
-                        </div>                    </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                    <i class="fa fa-bar-chart-o purple-bg"></i>
+                                                    <span class="headline">Active Students</span>
+                                                </a>
+                                                <p class="value">
+                                                    <span class="timer" data-from="0" data-to="440" data-speed="900" data-refresh-interval="60">
+                                                        440
+                                                    </span>
+                                                </p>
+                                                <p class="text-left num-label">in last 7 days (↑ 5.5%), 30 days (↓ 14.6%)</p>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                    <i class="fa fa-money green-bg"></i>
+                                                    <span class="headline">Job Matched Students</span>
+                                                </a>
+                                                <p class="value">
+                                                    <span class="timer" data-from="0" data-to="314" data-speed="900" data-refresh-interval="60">
+                                                        314
+                                                    </span>
+                                                </p>
+                                                <p class="text-left num-label">in last 7 days (↑ 8.5%), 30 days (↓ 4.6%)</p>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                    <i class="fa fa-bullhorn red-bg"></i>
+                                                    <span class="headline">Students who Viewed a Job</span>
+                                                </a>
+                                                <p class="value">
+                                                    <span class="timer" data-from="0" data-to="274" data-speed="900" data-refresh-interval="60">
+                                                        274
+                                                    </span>
+                                                </p>
+                                                <p class="text-left num-label">in last 7 days (↑ 0.5%), 30 days (↓ 1.6%)</p>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                    <i class="fa fa-users emerald-bg"></i>
+                                                    <span class="headline">Total Students</span>
+                                                </a>
+                                                <p class="value">
+                                                    <span class="timer" data-from="0" data-to="1000" data-speed="900" data-refresh-interval="60">
+                                                        1000
+                                                    </span>
+                                                </p>
+                                                <p class="text-left num-label">in last 7 days (↑ 5.5%), 30 days (↓ 14.6%)</p>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Begin Footer -->
@@ -363,50 +342,16 @@
 	
 
 
-<!-- uservoice -->
+<!-- intercom -->
 <script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/e84pqVIXXhiC7MBpHaP8Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-    //
-    // UserVoice Javascript SDK developer documentation:
-    // https://www.uservoice.com/o/javascript-sdk
-    //
-
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#448dd6',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
-
-    // Identify the user and pass traits
-    // To enable, replace sample data with actual user traits and uncomment the line
-    UserVoice.push(['identify', {
-        //email:      'john.doe@example.com', // User’s email address
-        //name:       'John Doe', // User’s real name
-        //created_at: 1364406966, // Unix timestamp for the date the user signed up
-        //id:         123, // Optional: Unique id of the user (if set, this should not change)
-        //type:       'Owner', // Optional: segment your users by type
-        //account: {
-        //  id:           123, // Optional: associate multiple users with a single account
-        //  name:         'Acme, Co.', // Account name
-        //  created_at:   1364406966, // Unix timestamp for the date the account was created
-        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-        //  ltv:          1495.00, // Decimal; lifetime value of the account
-        //  plan:         'Enhanced' // Plan name for the account
-        //}
-    }]);
-
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-    // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
 </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
