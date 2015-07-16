@@ -40,7 +40,7 @@
 		<!-- End Pattern Lab -->
 	
 	</head>
-	<body class="body" id="">
+	<body class="fixed-header fixed-header" id="">
 		<div id="theme-wrapper">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
@@ -123,6 +123,12 @@
                                             <span>Profile</span>
                                         </a>
                                     </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="fa fa-power-off"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
                             </ul>
                         </div>                    </div>
                 </section>
@@ -143,10 +149,19 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-12">
                                 <div class="alert alert-warning">
                                     <i class="fa fa-warning fa-fw fa-lg"></i>
                                     <strong></strong> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="alert alert-success">
+                                    <i class="fa fa-check fa-fw fa-lg"></i>
+                                    Welcome back! We scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday. Happy job hunting!
                                 </div>
                             </div>
                         </div>
@@ -176,17 +191,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12">
-                        <div class="main-box clearfix">
-                            <header class="main-box-header clearfix">
-                                <h2>Helpful Articles</h2>
-                            </header>
-                            <div class="main-box-body clearfix">
-                                <div class="list-group">
-                                </div>                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-12">
                         <div class="main-box clearfix">
                             <header class="main-box-header clearfix">
                                 <h2>Contact Career Services</h2>
@@ -194,27 +199,32 @@
                             <div class="main-box-body clearfix">
                                 <form role="form">
                                     <div class="form-group">
-                                        <label for="exampleTextarea">Message</label>
-                                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                        <label>Send a question or request</label>
+                                        <select class="form-control">
+                                            <option value="">- Select -</option>
+                                            <option value="1">What can I do now while I'm in school to prepare for a job offer?</option>
+                                            <option value="2">What are the best ways to get a good salary?</option>
+                                            <option value="3">I would like help with my resume</option>
+                                            <option value="4">Please help me prepare for a job interview</option>
+                                            <option value="5">What other resources does career services offer to help me get a job?</option>
+                                        </select>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-3">
                                             <button type="submit" class="btn btn-success col-xs-12">Send</button>
                                         </div>
                                     </div>
                                 </form>                            </div>
                         </div>
-
+                    </div>
+                    <div class="col-lg-12">
                         <div class="main-box clearfix">
                             <header class="main-box-header clearfix">
-                                <h2>Helpful Student Engagement Tips</h2>
+                                <h2>Helpful Articles</h2>
                             </header>
-
                             <div class="main-box-body clearfix">
-                                <div class="panel-group accordion" id="accordion">
-                                </div>
-
-                            </div>
+                                <div class="list-group">
+                                </div>                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +243,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "templates-job-seeker-dashboard";
-		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"molecules-warning","lineagePath":"..\/..\/patterns\/01-molecules-07-messaging-01-warning\/01-molecules-07-messaging-01-warning.html"},{"lineagePattern":"organisms-completeness","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-05-completeness\/02-organisms-03-sections-05-completeness.html"},{"lineagePattern":"organisms-overall-count","lineagePath":"..\/..\/patterns\/02-organisms-04-rows-01-overall-count\/02-organisms-04-rows-01-overall-count.html"},{"lineagePattern":"organisms-list-group","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-03-list-group\/02-organisms-03-sections-03-list-group.html"},{"lineagePattern":"molecules-contact-career-services","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-04-contact-career-services\/01-molecules-04-forms-04-contact-career-services.html"},{"lineagePattern":"organisms-faq","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-04-faq\/02-organisms-03-sections-04-faq.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"},{"lineagePattern":"molecules-left-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-left-nav\/01-molecules-05-navigation-05-left-nav.html"},{"lineagePattern":"molecules-warning","lineagePath":"..\/..\/patterns\/01-molecules-07-messaging-01-warning\/01-molecules-07-messaging-01-warning.html"},{"lineagePattern":"organisms-completeness","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-05-completeness\/02-organisms-03-sections-05-completeness.html"},{"lineagePattern":"organisms-overall-count","lineagePath":"..\/..\/patterns\/02-organisms-04-rows-01-overall-count\/02-organisms-04-rows-01-overall-count.html"},{"lineagePattern":"molecules-contact-career-services","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-04-contact-career-services\/01-molecules-04-forms-04-contact-career-services.html"},{"lineagePattern":"organisms-list-group","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-03-list-group\/02-organisms-03-sections-03-list-group.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [{"lineagePattern":"pages-job-seeker-dashboard","lineagePath":"..\/..\/patterns\/04-pages-02-job-seeker-02-job-seeker-dashboard\/04-pages-02-job-seeker-02-job-seeker-dashboard.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -294,50 +304,16 @@
 	
 
 
-<!-- uservoice -->
+<!-- intercom -->
 <script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/e84pqVIXXhiC7MBpHaP8Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-    //
-    // UserVoice Javascript SDK developer documentation:
-    // https://www.uservoice.com/o/javascript-sdk
-    //
-
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#448dd6',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
-
-    // Identify the user and pass traits
-    // To enable, replace sample data with actual user traits and uncomment the line
-    UserVoice.push(['identify', {
-        //email:      'john.doe@example.com', // User’s email address
-        //name:       'John Doe', // User’s real name
-        //created_at: 1364406966, // Unix timestamp for the date the user signed up
-        //id:         123, // Optional: Unique id of the user (if set, this should not change)
-        //type:       'Owner', // Optional: segment your users by type
-        //account: {
-        //  id:           123, // Optional: associate multiple users with a single account
-        //  name:         'Acme, Co.', // Account name
-        //  created_at:   1364406966, // Unix timestamp for the date the account was created
-        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-        //  ltv:          1495.00, // Decimal; lifetime value of the account
-        //  plan:         'Enhanced' // Plan name for the account
-        //}
-    }]);
-
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-    // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
 </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

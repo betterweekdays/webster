@@ -40,7 +40,7 @@
 		<!-- End Pattern Lab -->
 	
 	</head>
-	<body class="body" id="">
+	<body class="fixed-header fixed-header" id="">
 				
 		<!-- View All Patterns in a Pattern Sub-Type -->
 		<div class="sg-main" role="main">
@@ -173,18 +173,6 @@
         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
         <input class="form-control" type="text" placeholder="name@email.com">
     </div>
-    <div id="remember-me-wrapper">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="checkbox-nice">
-                    <input type="checkbox" id="terms-cond" checked="checked" />
-                    <label for="terms-cond">
-                        I accept terms and conditions
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="col-xs-12">
             <button type="submit" class="btn btn-success col-xs-12" onclick="window.location='../../patterns/04-pages-02-job-seeker-02-job-seeker-dashboard/04-pages-02-job-seeker-02-job-seeker-dashboard.html';"></button>
@@ -199,18 +187,6 @@
     &lt;div class=&quot;input-group&quot;&gt;
         &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/span&gt;
         &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;name@email.com&quot;&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;remember-me-wrapper&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-xs-12&quot;&gt;
-                &lt;div class=&quot;checkbox-nice&quot;&gt;
-                    &lt;input type=&quot;checkbox&quot; id=&quot;terms-cond&quot; checked=&quot;checked&quot; /&gt;
-                    &lt;label for=&quot;terms-cond&quot;&gt;
-                        I accept terms and conditions
-                    &lt;/label&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-xs-12&quot;&gt;
@@ -228,11 +204,18 @@
 						<div class="sg-pattern-body">
 							<form role="form">
     <div class="form-group">
-        <label for="exampleTextarea">Message</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <label>Send a question or request</label>
+        <select class="form-control">
+            <option value="">- Select -</option>
+            <option value="1">What can I do now while I'm in school to prepare for a job offer?</option>
+            <option value="2">What are the best ways to get a good salary?</option>
+            <option value="3">I would like help with my resume</option>
+            <option value="4">Please help me prepare for a job interview</option>
+            <option value="5">What other resources does career services offer to help me get a job?</option>
+        </select>
     </div>
     <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-3">
             <button type="submit" class="btn btn-success col-xs-12">Send</button>
         </div>
     </div>
@@ -243,11 +226,18 @@
 									<code>
 										&lt;form role=&quot;form&quot;&gt;
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label for=&quot;exampleTextarea&quot;&gt;Message&lt;/label&gt;
-        &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+        &lt;label&gt;Send a question or request&lt;/label&gt;
+        &lt;select class=&quot;form-control&quot;&gt;
+            &lt;option value=&quot;&quot;&gt;- Select -&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;What can I do now while I'm in school to prepare for a job offer?&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;What are the best ways to get a good salary?&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;I would like help with my resume&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Please help me prepare for a job interview&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;What other resources does career services offer to help me get a job?&lt;/option&gt;
+        &lt;/select&gt;
     &lt;/div&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-xs-4&quot;&gt;
+        &lt;div class=&quot;col-xs-3&quot;&gt;
             &lt;button type=&quot;submit&quot; class=&quot;btn btn-success col-xs-12&quot;&gt;Send&lt;/button&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -465,50 +455,16 @@
 	
 
 
-<!-- uservoice -->
+<!-- intercom -->
 <script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/e84pqVIXXhiC7MBpHaP8Q.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-    //
-    // UserVoice Javascript SDK developer documentation:
-    // https://www.uservoice.com/o/javascript-sdk
-    //
-
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#448dd6',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
-
-    // Identify the user and pass traits
-    // To enable, replace sample data with actual user traits and uncomment the line
-    UserVoice.push(['identify', {
-        //email:      'john.doe@example.com', // User’s email address
-        //name:       'John Doe', // User’s real name
-        //created_at: 1364406966, // Unix timestamp for the date the user signed up
-        //id:         123, // Optional: Unique id of the user (if set, this should not change)
-        //type:       'Owner', // Optional: segment your users by type
-        //account: {
-        //  id:           123, // Optional: associate multiple users with a single account
-        //  name:         'Acme, Co.', // Account name
-        //  created_at:   1364406966, // Unix timestamp for the date the account was created
-        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-        //  ltv:          1495.00, // Decimal; lifetime value of the account
-        //  plan:         'Enhanced' // Plan name for the account
-        //}
-    }]);
-
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-    // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
 </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
 
 <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

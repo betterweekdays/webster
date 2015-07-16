@@ -26,28 +26,40 @@
 
                         &lt;div class=&quot;row&quot;&gt;
                             &lt;div class=&quot;col-lg-12&quot;&gt;
-                            {{&gt; organisms-completeness }}
+                                &lt;div class=&quot;alert alert-success&quot;&gt;
+                                    &lt;i class=&quot;fa fa-check fa-fw fa-lg&quot;&gt;&lt;/i&gt;
+                                    Welcome back! Did you know we scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday for your students?
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix text-center&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2 class=&quot;giant&quot;&gt;I want to see a list of...&lt;/h2&gt;
+                                    &lt;/header&gt;
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        &lt;form role=&quot;form&quot; class=&quot;form-inline giant&quot; action=&quot;#&quot;&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;select class=&quot;form-control&quot;&gt;
+                                                        &lt;option value=&quot;1&quot;&gt;...students who logged-in and set a password (Active)&lt;/option&gt;
+                                                        &lt;option value=&quot;1&quot;&gt;...students who get automated daily job leads (Job Matched)&lt;/option&gt;
+                                                        &lt;option value=&quot;1&quot;&gt;...students that viewed at least one job (Viewed a Job)&lt;/option&gt;
+                                                        &lt;option value=&quot;1&quot;&gt;...students who chose 'Apply' on a job lead (Applied)&lt;/option&gt;
+                                                        &lt;option value=&quot;1&quot;&gt;...all of my students' activity (All Students)&lt;/option&gt;
+                                                &lt;/select&gt;
+                                            &lt;/div&gt;
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-career-services-browse }}';&quot;&gt;Go&lt;/button&gt;
+                                        &lt;/form&gt;
+                                        &lt;p class=&quot;text-left&quot;&gt;&lt;a href=&quot;#&quot;&gt;[x] Hide This&lt;/a&gt;&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
 
                         {{&gt; organisms-overall-count }}
 
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-lg-6 col-xs-12&quot;&gt;
-                        &lt;div class=&quot;main-box clearfix&quot;&gt;
-                            &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-                                &lt;h2&gt;Helpful Articles&lt;/h2&gt;
-                            &lt;/header&gt;
-                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                {{&gt; organisms-list-group }}
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;col-lg-6 col-xs-12&quot;&gt;
-                        {{&gt; organisms-faq }}
                     &lt;/div&gt;
                 &lt;/div&gt;
 
