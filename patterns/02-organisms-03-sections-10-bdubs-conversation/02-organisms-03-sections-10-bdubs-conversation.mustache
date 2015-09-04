@@ -1,39 +1,82 @@
 &lt;div class=&quot;main-box clearfix&quot;&gt;
-    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-        &lt;h2&gt;Conversation&lt;/h2&gt;
-    &lt;/header&gt;
     &lt;div class=&quot;main-box-body clearfix&quot;&gt;
         &lt;div class=&quot;conversation-wrapper&quot;&gt;
             &lt;div class=&quot;conversation-content&quot;&gt;
-                &lt;div style=&quot;position: relative; overflow: hidden; width: auto; height: 352px;&quot; class=&quot;slimScrollDiv&quot;&gt;&lt;div style=&quot;overflow: hidden; width: auto; height: 352px;&quot; class=&quot;conversation-inner&quot;&gt;
+                &lt;div class=&quot;conversation-inner&quot;&gt;
+
+                    {{#bdubs-journey-pts}}
+                    &lt;div&gt;
+                        &lt;p&gt;Your Journey Points: {{bdubs-journey-pts}}&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;progress&quot;&gt;
+                        &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;{{bdubs-journey-pts}}&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: {{bdubs-journey-pts}}%;&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    {{/bdubs-journey-pts}}
+
                     &lt;div class=&quot;conversation-item item-left clearfix&quot;&gt;
                         &lt;div class=&quot;conversation-user&quot;&gt;
-                            &lt;img src=&quot;img/samples/ryan.png&quot; alt=&quot;&quot;&gt;
+                            &lt;img src=&quot;../../img/robot50x50.png&quot; alt=&quot;&quot;/&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;conversation-body&quot;&gt;
                             &lt;div class=&quot;name&quot;&gt;
-                                Ryan Gossling
+                                BDubs Bot
                             &lt;/div&gt;
-                            &lt;div class=&quot;time hidden-xs&quot;&gt;
-                                September 21, 2013 18:28
-                            &lt;/div&gt;
-                            &lt;div class=&quot;text&quot;&gt;
-                                I don't think they tried to market it to the billionaire, spelunking,
-                                base-jumping crowd.
+                            &lt;div class=&quot;big text&quot;&gt;
+                                {{# bdubs-text1}}
+                                    &lt;p&gt;{{ bdubs-text1 }}&lt;/p&gt;
+                                {{/bdubs-text1}}
+
+                                {{# bdubs-text2}}
+                                    &lt;p&gt;{{ bdubs-text2 }}&lt;/p&gt;
+                                {{/bdubs-text2}}
+
+                                {{# bdubs-text3}}
+                                    &lt;p&gt;{{ bdubs-text3 }}&lt;/p&gt;
+                                {{/bdubs-text3}}
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
-                &lt;/div&gt;&lt;div style=&quot;background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 158.648px;&quot; class=&quot;slimScrollBar&quot;&gt;&lt;/div&gt;&lt;div style=&quot;width: 7px; height: 100%; position: absolute; top: 0px; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px; display: none;&quot; class=&quot;slimScrollRail&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;conversation-new-message&quot;&gt;
-                &lt;form&gt;
-                    &lt;div class=&quot;form-group&quot;&gt;
-                        &lt;textarea class=&quot;form-control&quot; rows=&quot;2&quot; placeholder=&quot;Enter your message...&quot;&gt;&lt;/textarea&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;clearfix&quot;&gt;
-                        &lt;button type=&quot;submit&quot; class=&quot;btn btn-success pull-right&quot;&gt;Send message&lt;/button&gt;
-                    &lt;/div&gt;
-                &lt;/form&gt;
+
+                    {{# bdubs-name-center}}{{&gt;molecules-name-center}}{{/bdubs-name-center}}
+
+                    {{# bdubs-degreeprogram}}
+                        &lt;div class=&quot;row text-center&quot;&gt;
+                            &lt;form role=&quot;form&quot; class=&quot;form-inline giant&quot; action=&quot;#&quot;&gt;
+                                &lt;div class=&quot;form-group&quot;&gt;
+                                    &lt;select class=&quot;form-control&quot;&gt;
+                                        &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;Accounting&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Biology&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Business Administration&lt;/option&gt;
+                                        &lt;option value=&quot;4&quot;&gt;Elementary Education&lt;/option&gt;
+                                        &lt;option value=&quot;5&quot;&gt;Finance&lt;/option&gt;
+                                        &lt;option value=&quot;6&quot;&gt;Medical Assisting&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;select class=&quot;form-control&quot;&gt;
+                                        &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;Anywhere&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Chicago, IL&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Kansas City, MO&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Miama, FL&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;New York, NY&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;St. Louis, MO&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;
+                                &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot; onclick=&quot;window.location='{{ link.pages-job-seeker-dashboard-intro-journey3 }}';&quot;&gt;Send&lt;/button&gt;
+                            &lt;/form&gt;
+                            &lt;div class=&quot;row small&quot;&gt;
+                                &lt;p&gt;(Don't worry. You can change this later!)&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    {{/bdubs-degreeprogram}}
+
+                    {{# bdubs-jobs-now}}
+                        &lt;form role=&quot;form&quot; class=&quot;form-inline giant text-center&quot; action=&quot;#&quot;&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-job-seeker-dashboard-intro-journey3 }}';&quot;&gt;Not yet. Tell me more.&lt;/button&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot; onclick=&quot;window.location='{{ link.pages-job-seeker-browse-jobs-journey }}';&quot;&gt;Yes&lt;/button&gt;
+                        &lt;/form&gt;
+                    {{/bdubs-jobs-now}}
+
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;

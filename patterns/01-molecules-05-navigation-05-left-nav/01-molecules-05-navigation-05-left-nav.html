@@ -40,7 +40,7 @@
 		<!-- End Pattern Lab -->
 	
 	</head>
-	<body class="fixed-header fixed-header" id="">
+	<body class="fixed-header" id="">
 		<div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
     <ul class="nav nav-pills nav-stacked">
             <li class="">
@@ -52,19 +52,19 @@
             <li class="">
                 <a href="/patterns/04-pages-02-job-seeker-02-job-seeker-browse-jobs/04-pages-02-job-seeker-02-job-seeker-browse-jobs.html">
                     <i class="fa fa-rocket"></i>
-                    <span>Browse Jobs</span>
+                    <span>Leads</span>
                 </a>
             </li>
             <li class="">
                 <a href="/patterns/04-pages-02-job-seeker-02-job-seeker-matches/04-pages-02-job-seeker-02-job-seeker-matches.html">
                     <i class="fa fa-money"></i>
-                    <span>Job Matches</span>
+                    <span>Matches</span>
                 </a>
             </li>
             <li class="">
                 <a href="/patterns/04-pages-02-job-seeker-02-job-seeker-assessment-start/04-pages-02-job-seeker-02-job-seeker-assessment-start.html">
                     <i class="fa fa-bar-chart-o"></i>
-                    <span>Self Assessment</span>
+                    <span>Assessment</span>
                 </a>
             </li>
             <li class="">
@@ -86,7 +86,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "molecules-left-nav";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-job-seeker-assessment-notready","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-notready\/03-templates-02-job-seeker-02-job-seeker-assessment-notready.html"},{"lineagePattern":"templates-job-seeker-assessment-pay","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-pay\/03-templates-02-job-seeker-02-job-seeker-assessment-pay.html"},{"lineagePattern":"templates-job-seeker-assessment-select","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-select\/03-templates-02-job-seeker-02-job-seeker-assessment-select.html"},{"lineagePattern":"templates-job-seeker-assessment-start","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-start\/03-templates-02-job-seeker-02-job-seeker-assessment-start.html"},{"lineagePattern":"templates-job-seeker-assessment-view","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-view\/03-templates-02-job-seeker-02-job-seeker-assessment-view.html"},{"lineagePattern":"templates-job-seeker-assessment","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment\/03-templates-02-job-seeker-02-job-seeker-assessment.html"},{"lineagePattern":"templates-job-seeker-browse-jobs","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-browse-jobs\/03-templates-02-job-seeker-02-job-seeker-browse-jobs.html"},{"lineagePattern":"templates-job-seeker-dashboard","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-dashboard\/03-templates-02-job-seeker-02-job-seeker-dashboard.html"},{"lineagePattern":"templates-job-seeker-matches","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-matches\/03-templates-02-job-seeker-02-job-seeker-matches.html"},{"lineagePattern":"templates-job-seeker-profile","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-profile\/03-templates-02-job-seeker-02-job-seeker-profile.html"},{"lineagePattern":"templates-job","lineagePath":"..\/..\/patterns\/03-templates-03-job-03-job\/03-templates-03-job-03-job.html"},{"lineagePattern":"templates-job-seeker-dashboard-intro-journey","lineagePath":"..\/..\/patterns\/03-templates-04-job-seeker-journey-04-job-seeker-dashboard-intro-journey\/03-templates-04-job-seeker-journey-04-job-seeker-dashboard-intro-journey.html"}];
+		var lineageR       = [{"lineagePattern":"templates-job-seeker-assessment-notready","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-notready\/03-templates-02-job-seeker-02-job-seeker-assessment-notready.html"},{"lineagePattern":"templates-job-seeker-assessment-pay","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-pay\/03-templates-02-job-seeker-02-job-seeker-assessment-pay.html"},{"lineagePattern":"templates-job-seeker-assessment-select","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-select\/03-templates-02-job-seeker-02-job-seeker-assessment-select.html"},{"lineagePattern":"templates-job-seeker-assessment-start","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-start\/03-templates-02-job-seeker-02-job-seeker-assessment-start.html"},{"lineagePattern":"templates-job-seeker-assessment-view","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment-view\/03-templates-02-job-seeker-02-job-seeker-assessment-view.html"},{"lineagePattern":"templates-job-seeker-assessment","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-assessment\/03-templates-02-job-seeker-02-job-seeker-assessment.html"},{"lineagePattern":"templates-job-seeker-browse-jobs","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-browse-jobs\/03-templates-02-job-seeker-02-job-seeker-browse-jobs.html"},{"lineagePattern":"templates-job-seeker-dashboard-new","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-dashboard-new\/03-templates-02-job-seeker-02-job-seeker-dashboard-new.html"},{"lineagePattern":"templates-job-seeker-dashboard","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-dashboard\/03-templates-02-job-seeker-02-job-seeker-dashboard.html"},{"lineagePattern":"templates-job-seeker-matches-blank","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-matches-blank\/03-templates-02-job-seeker-02-job-seeker-matches-blank.html"},{"lineagePattern":"templates-job-seeker-matches","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-matches\/03-templates-02-job-seeker-02-job-seeker-matches.html"},{"lineagePattern":"templates-job-seeker-profile","lineagePath":"..\/..\/patterns\/03-templates-02-job-seeker-02-job-seeker-profile\/03-templates-02-job-seeker-02-job-seeker-profile.html"},{"lineagePattern":"templates-job-new","lineagePath":"..\/..\/patterns\/03-templates-03-job-03-job-new\/03-templates-03-job-03-job-new.html"},{"lineagePattern":"templates-job","lineagePath":"..\/..\/patterns\/03-templates-03-job-03-job\/03-templates-03-job-03-job.html"},{"lineagePattern":"templates-job-seeker-browse-jobs-journey","lineagePath":"..\/..\/patterns\/03-templates-04-job-seeker-journey-04-job-seeker-browse-jobs-journey\/03-templates-04-job-seeker-journey-04-job-seeker-browse-jobs-journey.html"},{"lineagePattern":"templates-job-seeker-dashboard-intro-journey","lineagePath":"..\/..\/patterns\/03-templates-04-job-seeker-journey-04-job-seeker-dashboard-intro-journey\/03-templates-04-job-seeker-journey-04-job-seeker-dashboard-intro-journey.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

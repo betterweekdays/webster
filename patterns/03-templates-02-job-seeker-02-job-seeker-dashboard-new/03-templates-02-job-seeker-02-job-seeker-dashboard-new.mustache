@@ -1,0 +1,180 @@
+&lt;div id=&quot;theme-wrapper&quot; class=&quot;job-seeker-dashboard-new&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;ol class=&quot;breadcrumb&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home NEW&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li class=&quot;active&quot;&gt;&lt;span&gt;{{ title }}&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ol&gt;
+
+                                &lt;h1&gt;{{ title }}&lt;/h1&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            {{&gt; molecules-warning }}
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;alert alert-success&quot;&gt;
+                                    &lt;i class=&quot;fa fa-lightbulb-o fa-fw fa-lg&quot;&gt;&lt;/i&gt;
+                                    &lt;strong&gt;Welcome back!&lt;/strong&gt; We scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday. Happy job hunting!
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                &lt;div class=&quot;main-box card&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-sm-1&quot;&gt;
+                                            &lt;i class=&quot;fa fa-check&quot; style=&quot;background-color:#0691F9&quot;&gt;&lt;/i&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;col-sm-11&quot;&gt;
+                                            &lt;h2&gt;&lt;a href=&quot;#&quot; class=&quot;blue&quot;&gt;{{ completeness.title }}&lt;/a&gt;&lt;/h2&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-sm-12 meta&quot;&gt;
+                                        &lt;p&gt;1 / 5 sections complete. &lt;/p&gt;
+                                        &lt;div class=&quot;progress&quot;&gt;
+                                            &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%;&quot;&gt;
+                                                &lt;span class=&quot;sr-only&quot;&gt;20% Complete&lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                            &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                            {{# overall-count-1 }}
+                                &lt;div class=&quot;main-box card&quot;&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-sm-1&quot;&gt;
+                                            &lt;i class=&quot;fa {{ icon }} {{ bg-color }}&quot;&gt;&lt;/i&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;col-sm-11&quot;&gt;
+                                            &lt;h2&gt;&lt;a href=&quot;{{link}}&quot; class=&quot;green&quot;&gt;{{ value }} {{ headline }}&lt;/a&gt;&lt;/h2&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col-sm-12 meta&quot;&gt;
+                                            &lt;p class=&quot;value&quot;&gt;
+                                        &lt;!--&lt;span class=&quot;timer&quot; data-from=&quot;{{ start }}&quot; data-to=&quot;{{ finish }}&quot; data-speed=&quot;900&quot; data-refresh-interval=&quot;60&quot;&gt;--&gt;
+                                            &lt;!--{{ value }}--&gt;
+                                        &lt;!--&lt;/span&gt;--&gt;
+                                            &lt;/p&gt;
+                                            &lt;p&gt;
+                                                &lt;em&gt;Updated today&lt;/em&gt;
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            {{/overall-count-1}}
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                {{# overall-count-2 }}
+                                    &lt;div class=&quot;main-box card&quot; style=&quot;min-height:210px&quot;&gt;
+                                        &lt;div class=&quot;row&quot;&gt;
+                                            &lt;div class=&quot;col-sm-1&quot;&gt;
+                                                &lt;i class=&quot;fa {{ icon }} {{ bg-color }}&quot;&gt;&lt;/i&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;col-sm-11&quot;&gt;
+                                                &lt;h2&gt;&lt;a href=&quot;{{link}}&quot; class=&quot;purple&quot;&gt;{{ headline }}&lt;/a&gt;&lt;/h2&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;row&quot;&gt;
+                                            &lt;div class=&quot;col-sm-12 meta&quot;&gt;
+                                                &lt;p class=&quot;value&quot;&gt;
+                                                    {{ value }}.
+                                                    &lt;em &gt;Updated today&lt;/em&gt;
+
+                                                &lt;/p&gt;
+
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                {{/overall-count-2}}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-sm-6&quot;&gt;
+                                {{# overall-count-2 }}
+                                    &lt;div class=&quot;main-box card&quot;&gt;
+                                        &lt;div class=&quot;row&quot;&gt;
+                                            &lt;div class=&quot;col-sm-1&quot;&gt;
+                                                &lt;i class=&quot;fa fa-envelope-o&quot; style=&quot;background-color: #7f8c8d&quot;&gt;&lt;/i&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;col-sm-11&quot;&gt;
+                                                &lt;h2&gt;&lt;a href=&quot;{{link}}&quot; class=&quot;gray&quot;&gt;Contact Career Services&lt;/a&gt;&lt;/h2&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;row&quot;&gt;
+                                            &lt;div class=&quot;col-sm-12 meta&quot;&gt;
+                                                &lt;form role=&quot;form&quot;&gt;
+                                                    &lt;div class=&quot;form-group&quot;&gt;
+                                                        &lt;label&gt;Send a question or request&lt;/label&gt;
+                                                        &lt;select class=&quot;form-control&quot;&gt;
+                                                            &lt;option value=&quot;&quot;&gt;- Select -&lt;/option&gt;
+                                                            &lt;option value=&quot;1&quot;&gt;What can I do now while I'm in school to prepare for a job offer?&lt;/option&gt;
+                                                            &lt;option value=&quot;2&quot;&gt;What are the best ways to get a good salary?&lt;/option&gt;
+                                                            &lt;option value=&quot;3&quot;&gt;I would like help with my resume&lt;/option&gt;
+                                                            &lt;option value=&quot;4&quot;&gt;Please help me prepare for a job interview&lt;/option&gt;
+                                                            &lt;option value=&quot;5&quot;&gt;What other resources does career services offer to help me get a job?&lt;/option&gt;
+                                                        &lt;/select&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;row&quot;&gt;
+                                                        &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                            &lt;button type=&quot;submit&quot; style=&quot;background-color: #7f8c8d; border-color:#666a6e;&quot; class=&quot;btn btn-success col-xs-12&quot;&gt;Send&lt;/button&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/form&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                {{/overall-count-2}}
+                            &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+
+
+
+                &lt;div class=&quot;row&quot;&gt;
+
+                    &lt;div class=&quot;col-sm-6&quot;&gt;
+                        &lt;div class=&quot;main-box clearfix card&quot;&gt;
+
+                            &lt;div class=&quot;row&quot; style=&quot;margin-bottom:15px;&quot;&gt;
+                                &lt;div class=&quot;col-sm-1&quot;&gt;
+                                    &lt;i class=&quot;fa fa-book&quot; style=&quot;background-color: #f1c40f&quot;&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-sm-11&quot;&gt;
+                                    &lt;h2&gt;&lt;a href=&quot;{{link}}&quot; class=&quot;yellow&quot;&gt;Learn&lt;/a&gt;&lt;/h2&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                {{&gt; organisms-list-group }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
