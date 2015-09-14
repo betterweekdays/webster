@@ -3,7 +3,7 @@
 
 #content-wrapper { background: url("../../../img/bg_wood.jpg") repeat scroll left top transparent; min-height: 900px; }
 
-p { display: block; font-size: 1.2em; font-weight: 300; }
+p, ul li { display: block; font-size: 1.2em; font-weight: 300; }
 
 /** Header, Sidebar, Navbar **/
 #sidebar-nav .nav-pills > li.active > a { background-color: #75d042; }
