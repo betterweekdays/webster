@@ -1,0 +1,100 @@
+/** Page Wide **/
+#page-wrapper, #nav-col { background: url("../../../img/grey_wash_wall.png") repeat scroll left top transparent; }
+
+#content-wrapper { background: url("../../../img/bg_wood.jpg") repeat scroll left top transparent; min-height: 900px; }
+
+p, ul li { display: block; font-size: 1.2em; font-weight: 300; }
+
+/** Header, Sidebar, Navbar **/
+#sidebar-nav .nav-pills > li.active > a { background-color: #75d042; }
+#sidebar-nav .nav > li > a > span { font-size: 1em; }
+
+/** Header **/
+#header-navbar .nav > li .caret { border-top-color: #2b2b2b; border-bottom-color: #2b2b2b; }
+
+@media (min-width: 992px) { .navbar > .container .navbar-brand { background-color: #2b2b2b; } }
+
+.navbar-toggle { padding: 5px 10px; }
+.navbar-toggle .x-small { display: block; margin-top: -5px; font-size: 65%; }
+
+/** Main Content **/
+.infographic-box .match .value, .infographic-box-reverse .match .value, .infographic-box-center .match .value { text-align: right; }
+.infographic-box .match .headline, .infographic-box-reverse .match .headline, .infographic-box-center .match .headline, .infographic-box .match .title, .infographic-box-reverse .match .title, .infographic-box-center .match .title { text-align: left; }
+
+/* INFOGRAPHIC BOX REVERSE */
+.infographic-box-reverse .headline { text-align: left; }
+.infographic-box-reverse .value { text-align: left; }
+.infographic-box-reverse.merged .headline { text-align: left; }
+.infographic-box-reverse.merged .value { text-align: left; }
+
+.infographic-box-center .headline { text-align: center; }
+.infographic-box-center .value { text-align: center; }
+.infographic-box-center.merged .headline { text-align: center; }
+.infographic-box-center.merged .value { text-align: center; }
+
+#login-logo { background-color: #2b2b2b; }
+
+#login-box-inner .input-group div .form-control { height: 46px; padding-top: 0; padding-bottom: 0; }
+
+.login-footer-top { text-align: right; margin: 15px 0 0 0; padding-right: 0; }
+
+.login-footer { text-align: right; margin: 5px 0 0 0; padding-right: 0; }
+
+.iframe { position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden; }
+.iframe iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.main-box .giant { font-size: 2.3em; line-height: 52px; }
+.main-box .giant .form-control, .main-box .giant button { font-size: 25px; height: 45px; }
+.main-box .big { font-size: 1.8em; line-height: 40px; }
+.main-box .headline { display: block; font-size: 1.2em; font-weight: 300; }
+
+.main-box-body .input-group label { display: block; }
+
+.page-job-matches .infographic-box .btn a, .page-job-matches .infographic-box-reverse .btn a, .page-job-matches .infographic-box-center .btn a { color: white; }
+
+.calendar { min-width: 185px; }
+
+/* Dashboard */
+.job-seeker-dashboard-new .alert-warning, .job-seeker-dashboard-new .alert-success { background-color: white !important; }
+.job-seeker-dashboard-new #content-wrapper h1 { padding-left: 0; }
+.job-seeker-dashboard-new #content-wrapper .breadcrumb { padding-left: 0; }
+.job-seeker-dashboard-new .main-box.card { padding: 20px; min-height: 135px; }
+.job-seeker-dashboard-new .main-box.card i { font-size: 1.8em; display: block; float: left; margin-right: 15px; width: 40px; height: 40px; line-height: 40px; text-align: center; border-radius: 50%; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; }
+.job-seeker-dashboard-new .main-box.card h2 { font-size: 20px; font-weight: 500; padding-top: 6px; }
+.job-seeker-dashboard-new .main-box.card h2 a.blue { color: #0691f9; }
+.job-seeker-dashboard-new .main-box.card h2 a.green { color: #75d042; }
+.job-seeker-dashboard-new .main-box.card h2 a.purple { color: #9b59b6; }
+.job-seeker-dashboard-new .main-box.card h2 a.gray { color: #7f8c8d; }
+.job-seeker-dashboard-new .main-box.card h2 a.yellow { color: #f1c40f; }
+.job-seeker-dashboard-new .main-box.card .meta { margin-top: 15px; }
+.job-seeker-dashboard-new .main-box.card .meta .progress { margin-bottom: 0; }
+
+@media (min-width: 768px) { .job-seeker-dashboard-new .main-box.card h2 { margin-left: 15px; } }
+/* Job Detail - New */
+.job-new .posting-wrapper { padding: 0 15px; }
+.job-new .posting-wrapper h2 { font-size: 20px; font-weight: 500; color: #75d042; margin-left: 15px; padding-top: 15px; }
+.job-new .posting-wrapper .job-new-card { min-height: 240px; }
+.job-new .posting-wrapper .job-new-card img { width: 100%; margin: 13px 18px 18px 18px; max-width: 200px; }
+.job-new .posting-wrapper .job-new-card h3 { font-weight: 500; border: none; }
+.job-new .posting-wrapper .job-new-card h4 { min-height: 40px; margin-left: 15px; margin-right: 15px; margin-bottom: 3px; line-height: 20px; font-size: 15px; font-weight: 600; color: #656; }
+.job-new .posting-wrapper .job-new-card ul { padding-left: 30px; width: 100%; color: #555; margin-bottom: 20px; }
+.job-new .posting-wrapper .job-new-card .bottom-links { padding-left: 0; margin-top: 15px; text-align: center; list-style-type: none; }
+.job-new .posting-wrapper .job-new-card .bottom-links li { display: inline-block; }
+.job-new .posting-wrapper .job-new-card .bottom-links li a { color: #777; }
+.job-new .posting-wrapper .job-new-card .bottom-links li:not(:first-child) { margin-left: 10%; }
+.job-new .posting-wrapper .job-new-location h2 { color: #f7941e; }
+.job-new .posting-wrapper .job-new-schedule img { max-width: 110px; }
+.job-new .posting-wrapper .job-new-schedule h2 { color: #8e44ad; }
+.job-new .posting-wrapper .job-new-compensation h2 { color: #f1c40f; }
+.job-new .posting-wrapper .job-new-compensation img { max-width: 250px; }
+.job-new .job-new-button-sidebar button { width: 100%; margin-bottom: 20px; }
+.job-new .job-new-button-sidebar span.glyphicon-chevron-right { top: 2px; }
+.job-new .job-new-button-sidebar span.glyphicon-star-empty { top: 3px; }
+.job-new .tab-box { padding: 20px; }
+.job-new .tab-content { padding: 20px; line-height: 26px; }
+.job-new .nav-tabs { background: none; border-bottom: 1px solid #ddd; }
+.job-new .nav-tabs li > a { color: #0691f9; font-weight: 500; font-size: 16px; }
+.job-new .nav > li > a:hover, .job-new .nav > li > a:focus { color: #555; }
+.job-new .nav > li > a { padding: 10px 30px; }
+.job-new .nav-tabs > li.active > a, .job-new .nav-tabs > li.active > a:hover, .job-new .nav-tabs > li.active > a:focus { color: #555555; cursor: default; }
+.job-new .nav-tabs > li > a:hover, .job-new .nav-tabs > li > a:focus { background: none; }

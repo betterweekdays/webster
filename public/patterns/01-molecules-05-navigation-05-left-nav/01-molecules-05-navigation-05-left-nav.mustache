@@ -1,0 +1,18 @@
+&lt;div class=&quot;collapse navbar-collapse navbar-ex1-collapse&quot; id=&quot;sidebar-nav&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
+        {{# nav-items }}
+            &lt;li class=&quot;{{ class }}&quot;&gt;
+                {{# link }}
+                &lt;a href=&quot;{{ link }}&quot;&gt;
+                    &lt;i class=&quot;fa {{ icon }}&quot;&gt;&lt;/i&gt;
+                    &lt;span&gt;{{ title }}&lt;/span&gt;
+                &lt;/a&gt;
+                {{/link}}
+                {{^ link }}
+                    &lt;i class=&quot;fa {{ icon }}&quot;&gt;&lt;/i&gt;
+                    &lt;span&gt;{{ title }}&lt;/span&gt;
+                {{/link}}
+            &lt;/li&gt;
+        {{/ nav-items }}
+    &lt;/ul&gt;
+&lt;/div&gt;

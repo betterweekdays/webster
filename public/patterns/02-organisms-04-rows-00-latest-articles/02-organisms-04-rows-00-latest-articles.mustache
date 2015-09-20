@@ -1,0 +1,45 @@
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-8&quot;&gt;
+        &lt;div class=&quot;main-box clearfix&quot;&gt;
+            &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                &lt;h2 class=&quot;pull-left&quot;&gt;Helpful Articles&lt;/h2&gt;
+            &lt;/header&gt;
+
+            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table&quot;&gt;
+                        &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;&lt;a href=&quot;#&quot; class=&quot;asc&quot;&gt;&lt;span&gt;Title&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;
+                            &lt;th&gt;&lt;span&gt;Summary&lt;/span&gt;&lt;/th&gt;
+                            &lt;th &gt;&lt;span&gt;Source&lt;/span&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                        {{# articles-list }}
+                            &lt;tr&gt;
+                                &lt;td&gt;
+                                    &lt;a href=&quot;{{ url }}&quot;&gt;{{ title }}&lt;/a&gt;
+                                &lt;/td&gt;
+                                &lt;td&gt;
+                                    &lt;p&gt;{{ summary }}&lt;/p&gt;
+                                    &lt;p&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+                                &lt;/td&gt;
+                                &lt;td&gt;
+                                    {{ source }}
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        {{/articles-list}}
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+                &lt;ul class=&quot;pagination pull-right&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

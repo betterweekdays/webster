@@ -1,0 +1,76 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-cs-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;ol class=&quot;breadcrumb&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li class=&quot;active&quot;&gt;&lt;span&gt;{{org}}{{ title }}&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ol&gt;
+
+                                &lt;h1&gt;{{org}}{{ title }}&lt;/h1&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;alert alert-success&quot;&gt;
+                                    &lt;i class=&quot;fa fa-check fa-fw fa-lg&quot;&gt;&lt;/i&gt;
+                                    Welcome back! Did you know we scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday for your students?
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix text-center&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2 class=&quot;giant&quot;&gt;I want to see a list of...&lt;/h2&gt;
+                                    &lt;/header&gt;
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        &lt;form role=&quot;form&quot; class=&quot;form-inline giant&quot; action=&quot;#&quot;&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;select class=&quot;form-control&quot;&gt;
+                                                        &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;...students who logged-in and set a password (Active)&lt;/option&gt;
+                                                        &lt;option value=&quot;2&quot;&gt;...students who get automated daily job leads (Job Matched)&lt;/option&gt;
+                                                        &lt;option value=&quot;3&quot;&gt;...students that viewed at least one job (Viewed a Job)&lt;/option&gt;
+                                                        &lt;option value=&quot;4&quot;&gt;...students who chose 'Apply' on a job lead (Applied)&lt;/option&gt;
+                                                        &lt;option value=&quot;5&quot;&gt;...all of my students (Total Students)&lt;/option&gt;
+                                                        &lt;option value=&quot;6&quot;&gt;...all student activity&lt;/option&gt;
+                                                &lt;/select&gt;
+                                            &lt;/div&gt;
+                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-career-services-browse }}';&quot;&gt;Go&lt;/button&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        {{&gt; organisms-overall-count-cs }}
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                {{&gt; molecules-morris-pie-chart }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

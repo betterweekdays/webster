@@ -1,0 +1,16 @@
+&lt;div class=&quot;row&quot;&gt;
+    {{# overall-count }}
+        &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;div class=&quot;main-box infographic-box&quot;&gt;
+                &lt;i class=&quot;fa {{ icon }} {{ bg-color }}&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;headline&quot;&gt;{{ headline }}&lt;/span&gt;
+                &lt;span class=&quot;value&quot;&gt;
+                    &lt;span class=&quot;timer&quot; data-from=&quot;{{ start }}&quot; data-to=&quot;{{ finish }}&quot; data-speed=&quot;900&quot; data-refresh-interval=&quot;60&quot;&gt;
+                        {{ value }}
+                    &lt;/span&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;small text-right num-label&quot;&gt;{{ num-label }}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    {{/overall-count}}
+&lt;/div&gt;
