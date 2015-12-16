@@ -12,56 +12,149 @@
             &lt;div id=&quot;content-wrapper&quot;&gt;
                 &lt;div class=&quot;row&quot;&gt;
                     &lt;div class=&quot;col-lg-12&quot;&gt;
-
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12&quot;&gt;
-                                &lt;ol class=&quot;breadcrumb&quot;&gt;
-                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-                                    &lt;li class=&quot;active&quot;&gt;&lt;span&gt;{{ title }}&lt;/span&gt;&lt;/li&gt;
-                                &lt;/ol&gt;
-
-                                &lt;h1&gt;{{ title }}&lt;/h1&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-
-                        &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12&quot;&gt;
-                                &lt;div class=&quot;alert alert-success&quot;&gt;
-                                    &lt;i class=&quot;fa fa-check fa-fw fa-lg&quot;&gt;&lt;/i&gt;
-                                    Welcome back! Did you know we scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday for your students?
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-
-                        &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix text-center&quot;&gt;
-                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
-                                        &lt;h2 class=&quot;giant&quot;&gt;I want to see a list of...&lt;/h2&gt;
-                                    &lt;/header&gt;
-                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                        &lt;form role=&quot;form&quot; class=&quot;form-inline giant&quot; action=&quot;#&quot;&gt;
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;select class=&quot;form-control&quot;&gt;
-                                                        &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;...students who logged-in and set a password (Active)&lt;/option&gt;
-                                                        &lt;option value=&quot;2&quot;&gt;...students who get automated daily job leads (Job Matched)&lt;/option&gt;
-                                                        &lt;option value=&quot;3&quot;&gt;...students that viewed at least one job (Viewed a Job)&lt;/option&gt;
-                                                        &lt;option value=&quot;4&quot;&gt;...students who chose 'Apply' on a job lead (Applied)&lt;/option&gt;
-                                                        &lt;option value=&quot;5&quot;&gt;...all of my students (Total Students)&lt;/option&gt;
-                                                        &lt;option value=&quot;6&quot;&gt;...all student activity&lt;/option&gt;
-                                                &lt;/select&gt;
+                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
+                                &lt;div class=&quot;row&quot;&gt;
+                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                        &lt;div class=&quot;main-box&quot;&gt;
+                                            &lt;div class=&quot;row&quot;&gt;
+                                                &lt;div class=&quot;col-md-12&quot;&gt;
+                                                    &lt;div class=&quot;graph-box&quot;&gt;
+                                                        &lt;h2&gt;Percentage of Students&lt;br /&gt;Signed Up&lt;/h2&gt;
+                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot;&gt;
+                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
                                             &lt;/div&gt;
-                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-career-services-browse }}';&quot;&gt;Go&lt;/button&gt;
-                                        &lt;/form&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                        &lt;div class=&quot;main-box&quot;&gt;
+                                            &lt;div class=&quot;row&quot;&gt;
+                                                &lt;div class=&quot;col-md-12&quot;&gt;
+                                                    &lt;div class=&quot;graph-box&quot;&gt;
+                                                        &lt;h2 class=&quot;orange&quot;&gt;Week over Week&lt;br /&gt;Change in Percentage of Sign Ups&lt;/h2&gt;
+                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-2&quot; style=&quot;max-height: 335px; position: relative;&quot;&gt;
+                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
+                                &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                                    &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                        &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                            &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#overview-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos-tab&quot;&gt;To-Dos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#students-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;students-tab&quot; aria-expanded=&quot;true&quot;&gt;Students&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#employers-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;employers-tab&quot;&gt;Employers&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;overview-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
+                                                {{&gt; organisms-to-dos-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;students-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+
+                                                &lt;div class=&quot;row&quot;&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;red&quot;&gt;Average Daily&lt;br /&gt; Student Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-3&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                        &lt;h2 class=&quot;purple&quot;&gt;Week over Week Change&lt;br /&gt; in Average Daily Student Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-4&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+
+
+                                                {{&gt; organisms-activity-dashboard-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;employers-tab&quot; aria-labelledBy=&quot;engagement-tab&quot;&gt;
+
+                                                &lt;div class=&quot;row&quot;&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;red&quot;&gt;Average Daily&lt;br /&gt; Employer Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-5&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;purple&quot;&gt;Week over Week Change&lt;br /&gt; in Average Daily Employer Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-6&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+
+
+                                                {{&gt; organisms-activity-dashboard-cs-employer }}
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;&lt;!-- /example --&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-new-message }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-create-to-do }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-jump-to-profile }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-invite }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4&quot;&gt;
+                                {{&gt; organisms-jobs-companies-count }}
+                                {{&gt; organisms-choose-betterweekday-cs }}
                             &lt;/div&gt;
                         &lt;/div&gt;
 
-                        {{&gt; organisms-overall-count-cs }}
 
                         &lt;div class=&quot;row&quot;&gt;
-                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                            &lt;div class=&quot;col-lg-12 hidden&quot;&gt;
                                 {{&gt; molecules-morris-pie-chart }}
                             &lt;/div&gt;
                         &lt;/div&gt;

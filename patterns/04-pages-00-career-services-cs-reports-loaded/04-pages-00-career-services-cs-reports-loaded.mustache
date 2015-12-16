@@ -1,0 +1,298 @@
+&lt;div id=&quot;theme-wrapper&quot; class=&quot;jobs-home&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-cs-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot; class=&quot;report-builder&quot;&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-8&quot;&gt;
+                        &lt;div class=&quot;main-box clearfix&quot;&gt;
+                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                &lt;h2&gt;Saved Reports&lt;/h2&gt;
+                                &lt;form class=&quot;form-row&quot;&gt;
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;label class=&quot;hidden&quot;&gt;Load Report&lt;/label&gt;
+                                        &lt;select name=&quot;load&quot; title=&quot;&quot;&gt;
+                                            &lt;option value=&quot;&quot;&quot;&gt;&lt;/option&gt;
+                                            &lt;option value=&quot;report-title-1&quot;&gt;Report Title 1&lt;/option&gt;
+                                            &lt;option value=&quot;report-title-2&quot;&gt;Report Title 2&lt;/option&gt;
+                                            &lt;option value=&quot;report-title-3&quot;&gt;Report Title 3&lt;/option&gt;
+                                            &lt;option value=&quot;report-title-4&quot;&gt;Report Title 4&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+                                &lt;/form&gt;
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-8&quot;&gt;
+                        &lt;div class=&quot;main-box clearfix&quot;&gt;
+                            &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                &lt;h2&gt;Create New Report&lt;/h2&gt;
+
+                                &lt;form class=&quot;form-row&quot;&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;label for=&quot;data&quot;&gt;Show me:&lt;/label&gt;
+                                        &lt;select name=&quot;dropdownmain&quot; id=&quot;data&quot; title=&quot;&quot;&gt;
+                                            &lt;option value=&quot;job-seekers&quot;&gt;job seekers&lt;/option&gt;
+                                            &lt;option value=&quot;employers&quot;&gt;employers&lt;/option&gt;
+                                            &lt;option value=&quot;jobs&quot;&gt;jobs&lt;/option&gt;
+                                            &lt;option value=&quot;activities&quot;&gt;activities&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;label for=&quot;contains&quot;&gt;that&lt;/label&gt;
+                                        &lt;select name=&quot;contains&quot; id=&quot;contains&quot; title=&quot;Contains&quot;&gt;
+                                            &lt;option value=&quot;have&quot;&gt;have&lt;/option&gt;
+                                            &lt;option value=&quot;have-not&quot;&gt;have not&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;select name=&quot;job-seekers&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                            &lt;option value=&quot;active-account&quot;&gt;an active account&lt;/option&gt;
+                                            &lt;option value=&quot;resume-uploaded&quot;&gt;a resume uploaded&lt;/option&gt;
+                                            &lt;option value=&quot;viewed-job&quot;&gt;viewed a job&lt;/option&gt;
+                                            &lt;option value=&quot;personalized-matches&quot;&gt;personalized job matches&lt;/option&gt;
+                                            &lt;option value=&quot;expressed-interest&quot;&gt;expressed interest in applying&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;select name=&quot;employers&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                            &lt;option data-parent=&quot;active-account&quot;&gt;an active account&lt;/option&gt;
+                                            &lt;option data-parent=&quot;posted-job&quot;&gt;posted a job&lt;/option&gt;
+                                            &lt;option data-parent=&quot;viewed-profile&quot;&gt;viewed a profile&lt;/option&gt;
+                                            &lt;option data-parent=&quot;messaged&quot;&gt;messaged a job seeker&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;select name=&quot;jobs&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                            &lt;option data-parent=&quot;viewed&quot;&gt;viewed&lt;/option&gt;
+                                            &lt;option data-parent=&quot;interested&quot;&gt;interested in applied to&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;select name=&quot;activities&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                            &lt;option data-parent=&quot;completed&quot;&gt;been completed&lt;/option&gt;
+                                        &lt;/select&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;!--Shows if Jobs selected --&gt;
+
+                                    &lt;div class=&quot;form-group jobs-filter report-filter&quot;&gt;
+                                        &lt;p&gt;Filter by:&lt;/p&gt;
+                                        &lt;div class=&quot;form-group form-group-select1 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
+                                            {{#job}}
+                                                &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
+                                                &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
+                                                    {{#options}}
+                                                        &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
+                                                    {{/options}}
+                                                &lt;/select&gt;
+                                            {{/job}}
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-group form-group-select2 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
+                                            {{#location}}
+                                                &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
+                                                &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
+                                                    {{#options}}
+                                                        &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
+                                                    {{/options}}
+                                                &lt;/select&gt;
+                                            {{/location}}
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label class=&quot;hidden&quot; for=&quot;company&quot;&gt;Company&lt;/label&gt;
+                                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;company&quot; placeholder=&quot;Company&quot;&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+
+                                    &lt;!--/--&gt;
+
+                                    &lt;!--Shows if Activities selected --&gt;
+
+                                    &lt;div class=&quot;form-group activities-filter report-filter&quot;&gt;
+                                        &lt;p&gt;Filter by:&lt;/p&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;select name=&quot;role&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                &lt;option data-parent=&quot;role1&quot;&gt;Role Option 1&lt;/option&gt;
+                                                &lt;option data-parent=&quot;role2&quot;&gt;Role Option 2&lt;/option&gt;
+                                                &lt;option data-parent=&quot;role3&quot;&gt;Role Option 3&lt;/option&gt;
+                                                &lt;option data-parent=&quot;role4&quot;&gt;Role Option 4&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label for=&quot;name&quot; class=&quot;hidden&quot;&gt;Name&lt;/label&gt;
+                                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
+                                    &lt;!--/--&gt;
+
+                                &lt;/form&gt;
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-4&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+
+                            &lt;div class=&quot;col-xs-12&quot;&gt;
+                                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                    Run Report
+                                    &lt;span class=&quot;fa fa-gear&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;col-xs-12 margin-top-20&quot;&gt;
+                                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg email-btn&quot;&gt;
+                                    Email
+                                    &lt;span class=&quot;fa fa-envelope-o&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                    &lt;div class=&quot;main-box clearfix report-box&quot;&gt;
+
+                        &lt;div class=&quot;col-sm-10&quot;&gt;
+
+                            &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                &lt;h2 class=&quot;report-title&quot;&gt;Job Seekers That Have an Account&lt;/h2&gt;
+                            &lt;/header&gt;
+
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-sm-2&quot;&gt;
+
+
+                        &lt;!-- Button trigger modal --&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg save-report&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal1&quot;&gt;
+                            Save &lt;span class=&quot;fa fa-save&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+
+                        &lt;/div&gt;
+
+                        &lt;!-- Modal --&gt;
+                        &lt;div class=&quot;modal fade&quot; id=&quot;myModal1&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+                            &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                                &lt;div class=&quot;modal-content&quot;&gt;
+                                    &lt;div class=&quot;modal-header&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Save Report&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;modal-body&quot;&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label&gt;Report Title&lt;/label&gt;
+                                            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Report Title&quot;&gt;
+                                        &lt;/div&gt;
+
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;modal-footer&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save&lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                            &lt;div class=&quot;table-responsive&quot;&gt;
+                                &lt;table id=&quot;table-example&quot; class=&quot;table table-hover&quot;&gt;
+                                    &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;Name (email)&lt;/th&gt;
+                                        &lt;th&gt;Degree Program&lt;/th&gt;
+                                        &lt;th&gt;Status&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    &lt;/thead&gt;
+                                    &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Nixon, Tiger (tiger.nixon@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Education&lt;/td&gt;
+                                        &lt;td&gt;Has Password&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Winters, Garrett (garrett.winters@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Accounting&lt;/td&gt;
+                                        &lt;td&gt;Has Password&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Cox, Ashton (acox@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Computer Science&lt;/td&gt;
+                                        &lt;td&gt;Viewed a Job&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Kelly, Cedric (cedric.kelly1@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Criminal Justice&lt;/td&gt;
+                                        &lt;td&gt;Uploaded Resume&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Satou, Airi (asatou@yahoo.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Visual Communications&lt;/td&gt;
+                                        &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Williamson, Brielle (bwilliamson@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Practical Nursing&lt;/td&gt;
+                                        &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Chandler, Herrod (hchandler23@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Paralegal Studies&lt;/td&gt;
+                                        &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Davidson, Rhona (rrdavidson@yahoo.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Library Technical Assistant&lt;/td&gt;
+                                        &lt;td&gt;Viewed Job Matches&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Hurst, Colleen (Hurst987@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Criminal Justice&lt;/td&gt;
+                                        &lt;td&gt;Has Password&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Frost, Sonya (sonya.frost@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                        &lt;td&gt;Medical Assistant&lt;/td&gt;
+                                        &lt;td&gt;Applied to Job&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
