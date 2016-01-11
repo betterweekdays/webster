@@ -1,0 +1,118 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-cs-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;ol class=&quot;breadcrumb&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li class=&quot;active&quot;&gt;&lt;span&gt;{{ title }}&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ol&gt;
+
+                                &lt;h1&gt;{{ title }}&lt;/h1&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;row mrg-b-lg&quot;&gt;
+                            &lt;div class=&quot;col-xs-8&quot;&gt;
+                                {{&gt; molecules-sortfilter-cs }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        {{&gt; organisms-overall-count-single }}
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2&gt;All Students&lt;/h2&gt;
+                                    &lt;/header&gt;
+
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        &lt;div class=&quot;table-responsive&quot;&gt;
+                                            &lt;table id=&quot;table-example&quot; class=&quot;table table-hover&quot;&gt;
+                                                &lt;thead&gt;
+                                                &lt;tr&gt;
+                                                    &lt;th&gt;Name (email)&lt;/th&gt;
+                                                    &lt;th&gt;Degree Program&lt;/th&gt;
+                                                    &lt;th&gt;Status&lt;/th&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/thead&gt;
+                                                &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Nixon, Tiger (tiger.nixon@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Education&lt;/td&gt;
+                                                    &lt;td&gt;Has Password&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Winters, Garrett (garrett.winters@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Accounting&lt;/td&gt;
+                                                    &lt;td&gt;Has Password&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Cox, Ashton (acox@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Computer Science&lt;/td&gt;
+                                                    &lt;td&gt;Viewed a Job&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Kelly, Cedric (cedric.kelly1@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Criminal Justice&lt;/td&gt;
+                                                    &lt;td&gt;Uploaded Resume&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Satou, Airi (asatou@yahoo.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Visual Communications&lt;/td&gt;
+                                                    &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Williamson, Brielle (bwilliamson@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Practical Nursing&lt;/td&gt;
+                                                    &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Chandler, Herrod (hchandler23@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Paralegal Studies&lt;/td&gt;
+                                                    &lt;td&gt;Has Job Preferences&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Davidson, Rhona (rrdavidson@yahoo.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Library Technical Assistant&lt;/td&gt;
+                                                    &lt;td&gt;Viewed Job Matches&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Hurst, Colleen (Hurst987@gmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Criminal Justice&lt;/td&gt;
+                                                    &lt;td&gt;Has Password&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;&lt;a href=&quot;{{ link.pages-cs-student-profile }}&quot;&gt;Frost, Sonya (sonya.frost@hotmail.com)&lt;/a&gt;&lt;/td&gt;
+                                                    &lt;td&gt;Medical Assistant&lt;/td&gt;
+                                                    &lt;td&gt;Applied to Job&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/tbody&gt;
+                                            &lt;/table&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

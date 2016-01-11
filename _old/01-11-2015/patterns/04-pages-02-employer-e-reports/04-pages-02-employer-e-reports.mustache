@@ -1,0 +1,186 @@
+&lt;div id=&quot;theme-wrapper&quot; class=&quot;jobs-home&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-employer-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot; class=&quot;report-builder&quot;&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;col-lg-8&quot;&gt;
+                            &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                    &lt;h2&gt;Saved Reports&lt;/h2&gt;
+                                    &lt;form class=&quot;form-row&quot;&gt;
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label class=&quot;hidden&quot;&gt;Load Report&lt;/label&gt;
+                                            &lt;select name=&quot;load&quot; title=&quot;&quot;&gt;
+                                                &lt;option value=&quot;&quot;&quot;&gt;&lt;/option&gt;
+                                                &lt;option value=&quot;report-title-1&quot;&gt;Report Title 1&lt;/option&gt;
+                                                &lt;option value=&quot;report-title-2&quot;&gt;Report Title 2&lt;/option&gt;
+                                                &lt;option value=&quot;report-title-3&quot;&gt;Report Title 3&lt;/option&gt;
+                                                &lt;option value=&quot;report-title-4&quot;&gt;Report Title 4&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                    &lt;/form&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-8&quot;&gt;
+                            &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                    &lt;h2&gt;Create New Report&lt;/h2&gt;
+
+                                    &lt;form class=&quot;form-row&quot;&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label for=&quot;data&quot;&gt;Show me:&lt;/label&gt;
+                                            &lt;select name=&quot;dropdownmain&quot; id=&quot;data&quot; title=&quot;&quot;&gt;
+                                                &lt;option value=&quot;job-seekers&quot;&gt;job seekers&lt;/option&gt;
+                                                &lt;option value=&quot;jobs&quot;&gt;jobs&lt;/option&gt;
+                                                &lt;option value=&quot;activities&quot;&gt;activities&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;label for=&quot;contains&quot;&gt;that&lt;/label&gt;
+                                            &lt;select name=&quot;contains&quot; id=&quot;contains&quot; title=&quot;Contains&quot;&gt;
+                                                &lt;option value=&quot;have&quot;&gt;have&lt;/option&gt;
+                                                &lt;option value=&quot;have-not&quot;&gt;have not&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;select name=&quot;job-seekers&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                &lt;option value=&quot;active-account&quot;&gt;an active account&lt;/option&gt;
+                                                &lt;option value=&quot;resume-uploaded&quot;&gt;a resume uploaded&lt;/option&gt;
+                                                &lt;option value=&quot;viewed-job&quot;&gt;viewed a job&lt;/option&gt;
+                                                &lt;option value=&quot;personalized-matches&quot;&gt;personalized job matches&lt;/option&gt;
+                                                &lt;option value=&quot;expressed-interest&quot;&gt;expressed interest in applying&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;select name=&quot;employers&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                &lt;option data-parent=&quot;active-account&quot;&gt;an active account&lt;/option&gt;
+                                                &lt;option data-parent=&quot;posted-job&quot;&gt;posted a job&lt;/option&gt;
+                                                &lt;option data-parent=&quot;viewed-profile&quot;&gt;viewed a profile&lt;/option&gt;
+                                                &lt;option data-parent=&quot;messaged&quot;&gt;messaged a job seeker&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;select name=&quot;jobs&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                &lt;option data-parent=&quot;viewed&quot;&gt;viewed&lt;/option&gt;
+                                                &lt;option data-parent=&quot;interested&quot;&gt;interested in applied to&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                            &lt;select name=&quot;activities&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                &lt;option data-parent=&quot;completed&quot;&gt;been completed&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;!--Shows if Jobs selected --&gt;
+
+                                        &lt;div class=&quot;form-group jobs-filter report-filter&quot;&gt;
+                                            &lt;p&gt;Filter by:&lt;/p&gt;
+                                            &lt;div class=&quot;form-group form-group-select1 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
+                                                {{#job}}
+                                                    &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
+                                                    &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
+                                                        {{#options}}
+                                                            &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
+                                                        {{/options}}
+                                                    &lt;/select&gt;
+                                                {{/job}}
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group form-group-select2 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
+                                                {{#location}}
+                                                    &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
+                                                    &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
+                                                        {{#options}}
+                                                            &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
+                                                        {{/options}}
+                                                    &lt;/select&gt;
+                                                {{/location}}
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;label class=&quot;hidden&quot; for=&quot;company&quot;&gt;Company&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;company&quot; placeholder=&quot;Company&quot;&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+
+                                        &lt;!--/--&gt;
+
+                                        &lt;!--Shows if Activities selected --&gt;
+
+                                        &lt;div class=&quot;form-group activities-filter report-filter&quot;&gt;
+                                            &lt;p&gt;Filter by:&lt;/p&gt;
+
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;select name=&quot;role&quot; id=&quot;&quot; title=&quot;&quot;&gt;
+                                                    &lt;option data-parent=&quot;role1&quot;&gt;Role Option 1&lt;/option&gt;
+                                                    &lt;option data-parent=&quot;role2&quot;&gt;Role Option 2&lt;/option&gt;
+                                                    &lt;option data-parent=&quot;role3&quot;&gt;Role Option 3&lt;/option&gt;
+                                                    &lt;option data-parent=&quot;role4&quot;&gt;Role Option 4&lt;/option&gt;
+                                                &lt;/select&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group&quot;&gt;
+                                                &lt;label for=&quot;name&quot; class=&quot;hidden&quot;&gt;Name&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+                                            &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                        &lt;!--/--&gt;
+
+                                    &lt;/form&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+
+                                &lt;div class=&quot;col-xs-12&quot;&gt;
+                                    &lt;a href=&quot;{{ link.pages-e-reports-loaded }}&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Run Report
+                                        &lt;span class=&quot;fa fa-gear&quot;&gt;&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-xs-12 margin-top-20&quot;&gt;
+                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Email
+                                        &lt;span class=&quot;fa fa-envelope-o&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

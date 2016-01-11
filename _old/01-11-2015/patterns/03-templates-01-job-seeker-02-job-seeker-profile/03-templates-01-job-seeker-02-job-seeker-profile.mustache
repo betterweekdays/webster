@@ -1,0 +1,83 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            {{&gt; molecules-warning }}
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!--&lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        {{&gt; organisms-profile-job-pref }}
+                    &lt;/div&gt;
+                &lt;/div&gt;--&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-8&quot;&gt;
+                        &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                            &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#resumes-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;resumes&quot; aria-expanded=&quot;true&quot;&gt;Resumes&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#info-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;info&quot;&gt;Personal Details&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#prefs-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;prefs&quot;&gt;Job Preferences&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;messages&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#to-dos-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos&quot;&gt;To-Dos&lt;/a&gt;&lt;/li&gt;
+
+                                &lt;/ul&gt;
+                                &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;resumes-tab&quot; aria-labelledBy=&quot;resumes-tab&quot;&gt;
+                                        {{&gt; organisms-profile-resume-upload }}
+                                    &lt;/div&gt;
+                                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;info-tab&quot; aria-labelledBy=&quot;info-tab&quot;&gt;
+                                        {{&gt; organisms-profile-personal-details }}
+                                    &lt;/div&gt;
+                                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;prefs-tab&quot; aria-labelledBy=&quot;prefs-tab&quot;&gt;
+                                        {{&gt; organisms-profile-job-pref }}
+                                    &lt;/div&gt;
+                                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;messages-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+                                        {{&gt; organisms-messages-list }}
+                                    &lt;/div&gt;
+                                    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;to-dos-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
+                                        {{&gt; organisms-to-dos }}
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;&lt;!-- /example --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-lg-4&quot;&gt;
+                        &lt;div class=&quot;main-box&quot;&gt;
+                            &lt;div class=&quot;main-box-header&quot;&gt;
+                                &lt;h2&gt;Skills Parsed from your Personalized Jobs Resume&lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;main-box-body&quot;&gt;
+                                &lt;ul class=&quot;list-group&quot;&gt;
+                                    &lt;li class=&quot;list-group-item&quot;&gt;Medical Assisting&lt;/li&gt;
+                                    &lt;li class=&quot;list-group-item&quot;&gt;Taking blood pressure&lt;/li&gt;
+                                    &lt;li class=&quot;list-group-item&quot;&gt;Charting&lt;/li&gt;
+                                    &lt;li class=&quot;list-group-item&quot;&gt;Making phone calls&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        {{&gt; organisms-bdubs-conversation-small }}
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

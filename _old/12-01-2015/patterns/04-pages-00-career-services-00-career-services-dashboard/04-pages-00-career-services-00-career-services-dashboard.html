@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>Better Weekdays University: Dashboard</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- bootstrap -->
+        <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
+
+        <!-- libraries -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
+
+		<!-- global styles -->
+		<link rel="stylesheet" href="../../css/theme/theme_styles.css?1442262382" media="all" />
+
+        <!-- this page specific styles -->
+        <link rel="stylesheet" type="text/css" href="../../css/libs/morris.css">
+
+        <!-- google font libraries -->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/respond.min.js"></script>
+        <![endif]-->
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1442262382" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1442262382" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="home" id="">
+		<div id="theme-wrapper">
+    <!-- Begin .header -->
+    <header class="navbar" id="header-navbar">
+        <div class="container">
+            <a href="#" id="logo" class="navbar-brand">
+                <img src="../../../img/bw_logo_white.png" alt="" class="normal-logo logo-white">
+                <img src="../../../img/bw_logo_grey.png" alt="" class="normal-logo logo-black">
+                <img src="../../../img/bw_logo_grey.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+            </a>
+
+            <div class="clearfix">
+                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                    <span class="x-small">Menu</span>
+                </button>
+
+                <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+                    <ul class="nav navbar-nav pull-left">
+                        <li>
+                            <a class="btn" id="make-small-nav">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-no-collapse pull-right" id="header-nav">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#"><span>My Awesome Organization</span></a>
+                        </li>
+                        <li class="dropdown profile-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="hidden-xs">john@email.com</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End .header -->    <div id="page-wrapper" class="container">
+        <div class="row">
+            <div id="nav-col">
+                <section id="col-left" class="col-left-nano">
+                    <div id="col-left-inner" class="col-left-nano-content">
+                        <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+                            <ul class="nav nav-pills nav-stacked">
+                                    <li class="active">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-dashboard/04-pages-00-career-services-00-career-services-dashboard.html">
+                                            <i class="fa fa-dashboard"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                            <i class="fa fa-users"></i>
+                                            <span>Students</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-browse-activity/04-pages-00-career-services-00-career-services-browse-activity.html">
+                                            <i class="fa fa-heartbeat"></i>
+                                            <span>Activity</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-00-career-services-resources/04-pages-00-career-services-00-career-services-resources.html">
+                                            <i class="fa fa-info-circle"></i>
+                                            <span>Help &amp; Resources</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="fa fa-power-off"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>                    </div>
+                </section>
+            </div>
+            <div id="content-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">Home</a></li>
+                                    <li class="active"><span>Better Weekdays University: Dashboard</span></li>
+                                </ol>
+
+                                <h1>Better Weekdays University: Dashboard</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="alert alert-success">
+                                    <i class="fa fa-check fa-fw fa-lg"></i>
+                                    Welcome back! Did you know we scanned over 1,027 job boards and added another 31,407 fresh jobs to our database yesterday for your students?
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-box clearfix text-center">
+                                    <header class="main-box-header clearfix">
+                                        <h2 class="giant">I want to see a list of...</h2>
+                                    </header>
+                                    <div class="main-box-body clearfix">
+                                        <form role="form" class="form-inline giant" action="#">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                        <option value="1" selected="selected">...students who logged-in and set a password (Active)</option>
+                                                        <option value="2">...students who get automated daily job leads (Job Matched)</option>
+                                                        <option value="3">...students that viewed at least one job (Viewed a Job)</option>
+                                                        <option value="4">...students who chose 'Apply' on a job lead (Applied)</option>
+                                                        <option value="5">...all of my students (Total Students)</option>
+                                                        <option value="6">...all student activity</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-info" onclick="window.location='../../patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html';">Go</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <div class="col-xs-4">
+                                                    <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                        <i class="fa fa-key yellow-bg"></i>
+                                                        <span class="headline">Active</span>
+                                                    </a>
+                                                    <p class="value">
+                                                        <span class="timer" data-from="0" data-to="440" data-speed="900" data-refresh-interval="60">
+                                                            440
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 10.9%</strong></h4>
+                                                    <h5><strong>7 days ago</strong></h5>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 22.1%</strong></h4>
+                                                    <h5><strong>30 days ago</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <div class="col-xs-4">
+                                                    <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                        <i class="fa fa-money green-bg"></i>
+                                                        <span class="headline">Job Matched</span>
+                                                    </a>
+                                                    <p class="value">
+                                                        <span class="timer" data-from="0" data-to="291" data-speed="900" data-refresh-interval="60">
+                                                            291
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 0.5%</strong></h4>
+                                                    <h5><strong>7 days ago</strong></h5>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 1.5%</strong></h4>
+                                                    <h5><strong>30 days ago</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <div class="col-xs-4">
+                                                    <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                        <i class="fa fa-bullhorn red-bg"></i>
+                                                        <span class="headline">Viewed a Job</span>
+                                                    </a>
+                                                    <p class="value">
+                                                        <span class="timer" data-from="0" data-to="274" data-speed="900" data-refresh-interval="60">
+                                                            274
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 1.5%</strong></h4>
+                                                    <h5><strong>7 days ago</strong></h5>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 12.5%</strong></h4>
+                                                    <h5><strong>30 days ago</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <div class="col-xs-4">
+                                                    <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                        <i class="fa fa-clipboard gray-bg"></i>
+                                                        <span class="headline">Applied to Job</span>
+                                                    </a>
+                                                    <p class="value">
+                                                        <span class="timer" data-from="0" data-to="314" data-speed="900" data-refresh-interval="60">
+                                                            314
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 0.9%</strong></h4>
+                                                    <h5><strong>7 days ago</strong></h5>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 18.5%</strong></h4>
+                                                    <h5><strong>30 days ago</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="main-box infographic-box-reverse">
+                                        <div class="row">
+                                            <div class="col-xs-10 text-left">
+                                                <div class="col-xs-4">
+                                                    <a href="/patterns/04-pages-00-career-services-00-career-services-browse/04-pages-00-career-services-00-career-services-browse.html">
+                                                        <i class="fa fa-users emerald-bg"></i>
+                                                        <span class="headline">Total Students</span>
+                                                    </a>
+                                                    <p class="value">
+                                                        <span class="timer" data-from="0" data-to="1000" data-speed="900" data-refresh-interval="60">
+                                                            1000
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 6.1%</strong></h4>
+                                                    <h5><strong>7 days ago</strong></h5>
+                                                </div>
+                                                <div class="col-xs-4 text-center">
+                                                    <h4 class="green"><strong>↑ 7.5%</strong></h4>
+                                                    <h5><strong>30 days ago</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 text-right">
+                                                <p>
+                                                    <em>Updated today</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-box">
+                                    <header class="main-box-header clearfix">
+                                        <h2>Overall</h2>
+                                    </header>
+
+                                    <div class="main-box-body clearfix">
+                                        <div id="hero-donut"></div>
+                                    </div>
+                                </div>                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Begin Footer -->
+                <footer id="footer-bar" class="row">
+                    <p id="footer-copyright" class="col-xs-12">
+                        &copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
+                    </p>
+                </footer>
+                <!-- End Footer -->            </div>
+        </div>
+    </div>
+</div><!--DO NOT REMOVE-->
+	
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "pages-career-services-dashboard";
+		var lineage        = [{"lineagePattern":"templates-career-services-dashboard","lineagePath":"..\/..\/patterns\/03-templates-00-career-services-00-career-services-dashboard\/03-templates-00-career-services-00-career-services-dashboard.html"}];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1442262382">
+		(function() {
+			if (self != top) {
+				var cb = '1442262382';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1442262382">
+		(function() {
+			if (self != top) {
+				var cb = '1442262382';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+<!-- intercom -->
+<script>
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.4/javascripts/jquery.nanoscroller.min.js"></script>
+
+<!-- this page specific scripts -->
+
+
+
+    <script src="../../js/jquery.knob.js"></script>
+    <script src="../../js/raphael-min.js"></script>
+    <script src="../../js/morris.js"></script>
+
+
+<!-- theme scripts -->
+<script src="../../js/scripts.js"></script>
+<script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script>
+
+
+
+
+    <script>
+        $(function($) {
+            graphDonut = Morris.Donut({
+                element: 'hero-donut',
+                data: [
+                    { label: "Has Password",  value: 20},
+                    { label: "Job Preferences",  value: 36},
+                    { label: "Resume Uploaded",  value: 10},
+                    { label: "Job Matches",  value: 17},
+                    { label: "Viewed Job",  value: 20},
+                    { label: "Applied to Job",  value: 14}
+                ],
+                colors: ['#f1c40f', '#9b59b6', '#3498db', '#2ecc71', '#e74c3c', '#95a5a6'],
+                formatter: function (y) { return y + "%" },
+                resize: true
+            });
+
+            /* KNOB CHART LIBRARY */
+
+            $(".knob").knob({
+                change : function (value) {
+                    //console.log("change : " + value);
+                },
+                release : function (value) {
+                    //console.log(this.$.attr('value'));
+                    console.log("release : " + value);
+                },
+                cancel : function () {
+                    console.log("cancel : ", this);
+                },
+                draw : function () {
+
+                    // "tron" case
+                    if(this.$.data('skin') == 'tron') {
+
+                        var a = this.angle(this.cv)  // Angle
+                                , sa = this.startAngle		  // Previous start angle
+                                , sat = this.startAngle		 // Start angle
+                                , ea							// Previous end angle
+                                , eat = sat + a				 // End angle
+                                , r = 1;
+
+                        this.g.lineWidth = this.lineWidth;
+
+                        this.o.cursor
+                        && (sat = eat - 0.3)
+                        && (eat = eat + 0.3);
+
+                        if (this.o.displayPrevious) {
+                            ea = this.startAngle + this.angle(this.v);
+                            this.o.cursor
+                            && (sa = ea - 0.3)
+                            && (ea = ea + 0.3);
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.pColor;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+                            this.g.stroke();
+                        }
+
+                        this.g.beginPath();
+                        this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+                        this.g.stroke();
+
+                        this.g.lineWidth = 2;
+                        this.g.beginPath();
+                        this.g.strokeStyle = this.o.fgColor;
+                        this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                        this.g.stroke();
+
+                        return false;
+                    }
+                }
+            });
+
+            // Example of infinite knob, iPod click wheel
+            var v, up=0,down=0,i=0
+                    ,$idir = $("div.idir")
+                    ,$ival = $("div.ival")
+                    ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+                    ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+
+            $("input.infinite").knob({
+                min : 0
+                , max : 20
+                , stopper : false
+                , change : function () {
+                    if(v > this.cv){
+                        if(up){
+                            decr();
+                            up=0;
+                        }else{up=1;down=0;}
+                    } else {
+                        if(v < this.cv){
+                            if(down){
+                                incr();
+                                down=0;
+                            }else{down=1;up=0;}
+                        }
+                    }
+                    v = this.cv;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

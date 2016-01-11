@@ -1,0 +1,47 @@
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12&quot;&gt;
+        &lt;div class=&quot;main-box small-graph-box txt-normal&quot;&gt;
+            &lt;div class=&quot;col-xs-12&quot;&gt;
+                &lt;a href=&quot;{{ link.pages-cs-students-active }}&quot;&gt;&lt;span class=&quot;value&quot;&gt;25% Overall Engagement&lt;/span&gt;&lt;/a&gt;
+                &lt;span class=&quot;headline&quot;&gt;100 / 400 students at least viewed a job&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    {{# overall-count-plain }}
+    &lt;div class=&quot;col-lg-8 col-xs-12 text-center mrg-b-md&quot;&gt;
+        &lt;h2&gt;&lt;i class=&quot;fa fa-long-arrow-up&quot;&gt;&lt;/i&gt;&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-8 col-xs-12&quot;&gt;
+        &lt;div class=&quot;main-box small-graph-box txt-normal&quot;&gt;
+            &lt;div class=&quot;col-xs-6 stat&quot;&gt;
+                &lt;a href=&quot;{{ link.pages-cs-students-active }}&quot;&gt;
+                    &lt;span class=&quot;value&quot;&gt;{{ value }}&lt;/span&gt;
+                    &lt;span class=&quot;headline&quot;&gt;{{ headline }}&lt;/span&gt;
+                &lt;/a&gt;
+                {{# label }}
+                &lt;span class=&quot;label label-{{label.type}}&quot;&gt;{{label.text}}&lt;/span&gt;
+                {{/ label }}
+            &lt;/div&gt;
+            &lt;div class=&quot;col-xs-6 stat&quot;&gt;
+                &lt;span class=&quot;subinfo&quot;&gt;
+                    &lt;i class=&quot;fa fa-arrow-circle-o-up&quot;&gt;&lt;/i&gt; {{ 7day }}% this week
+                &lt;/span&gt;
+                &lt;span class=&quot;subinfo&quot;&gt;
+                    &lt;i class=&quot;fa fa-arrow-circle-o-up&quot;&gt;&lt;/i&gt; {{ 30day }}% this month
+                &lt;/span&gt;
+                {{# iftip }}
+                &lt;br /&gt;
+                &lt;span class=&quot;subinfo&quot;&gt;&lt;strong&gt;Tips:&lt;/strong&gt;&lt;/span&gt;
+                &lt;ul class=&quot;subinfo&quot;&gt;
+                    {{#tips}}
+                    &lt;li&gt;{{text}}&lt;/li&gt;
+                    {{/tips}}
+                &lt;/ul&gt;
+                {{/ iftip }}
+            &lt;/div&gt;
+            &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    {{/ overall-count-plain }}
+&lt;/div&gt;
