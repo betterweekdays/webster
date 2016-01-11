@@ -104,6 +104,32 @@
                                         &lt;h1&gt;Sonya Frost&lt;/h1&gt;
                                     &lt;/div&gt;
 
+                                    &lt;div class=&quot;row hidden-lg&quot;&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        &lt;!-- Button trigger modal --&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-to-do-modal&quot;&gt;
+                                            New To-Do &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        &lt;!-- Button trigger modal --&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                            New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg text-right&quot;&gt;
+                                            Contact Later &lt;span class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                            Save for Later &lt;span class=&quot;fa fa-bookmark&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
                                     &lt;div class=&quot;row&quot;&gt;
                                         &lt;div class=&quot;col-lg-6&quot;&gt;
                                             &lt;div class=&quot;main-box card&quot;&gt;
@@ -274,18 +300,31 @@
                                                     &lt;/div&gt;
                                                 &lt;/div&gt;
                                                 &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;messages-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
-                                                    &lt;p&gt;From: John Smith&lt;br /&gt;Date: 12/07/2015&lt;/p&gt;
-                                                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                                                    &lt;div class=&quot;pull-right&quot;&gt;
+                                                        &lt;span class=&quot;badge badge-warning&quot;&gt;recommendation&lt;/span&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;p&gt;12/07/2015&lt;/p&gt;
+                                                    &lt;p&gt;&lt;a href=&quot;../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/p&gt;
 
                                                     &lt;hr /&gt;
 
-                                                    &lt;p&gt;From: John Smith&lt;br /&gt;Date: 12/03/2015&lt;/p&gt;
+                                                    &lt;div class=&quot;pull-right&quot;&gt;
+                                                        &lt;span class=&quot;badge badge-primary&quot;&gt;email&lt;/span&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;p&gt;12/03/2015&lt;br /&gt;From: John Smith&lt;/p&gt;
                                                     &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&lt;/p&gt;
 
                                                     &lt;hr /&gt;
 
-                                                    &lt;p&gt;From: Jane Doe&lt;br /&gt;Date: 12/01/2015&lt;/p&gt;
-                                                    &lt;p&gt;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.&lt;/p&gt;                                                &lt;/div&gt;
+                                                    &lt;div class=&quot;pull-right&quot;&gt;
+                                                        &lt;span class=&quot;badge badge-info&quot;&gt;invite&lt;/span&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;p&gt;12/01/2015&lt;/p&gt;
+                                                    &lt;p&gt;Create Better Weekdays Account&lt;/p&gt;
+                                                &lt;/div&gt;
                                                 &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;engagement-tab&quot; aria-labelledBy=&quot;engagement-tab&quot;&gt;
                                                     &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
                                                         &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Sonya was last active &lt;strong&gt;3 days ago&lt;/strong&gt;.&lt;/li&gt;
@@ -303,84 +342,28 @@
 
                                 &lt;/div&gt;
 
-                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
                                     &lt;!-- Button trigger modal --&gt;
                                     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-to-do-modal&quot;&gt;
                                         New To-Do &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
-                                    &lt;/button&gt;
+                                    &lt;/button&gt;                                &lt;/div&gt;
 
-                                    &lt;!-- Modal --&gt;
-                                    &lt;div class=&quot;modal fade&quot; id=&quot;create-to-do-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
-                                        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-                                            &lt;div class=&quot;modal-content&quot;&gt;
-                                                &lt;div class=&quot;modal-header&quot;&gt;
-                                                    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-                                                    &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New To-Do&lt;/h4&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-body&quot;&gt;
-                                                    &lt;form&gt;
-                                                        &lt;div class=&quot;form-group&quot;&gt;
-                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;
-                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-group&quot;&gt;
-                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Type:&lt;/label&gt;
-                                                            &lt;select class=&quot;form-control&quot;&gt;
-                                                                &lt;option&gt;&lt;/option&gt;
-                                                                &lt;option&gt;Getting Started&lt;/option&gt;
-                                                                &lt;option&gt;Career Services&lt;/option&gt;
-                                                                &lt;option&gt;Job: Medical Assistant - Chicago, IL&lt;/option&gt;
-                                                                &lt;option&gt;Job: Medical Assistant - Columbus, Ohio&lt;/option&gt;
-                                                            &lt;/select&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-group&quot;&gt;
-                                                            &lt;label for=&quot;to-do-title&quot; class=&quot;control-label&quot;&gt;Task:&lt;/label&gt;
-                                                            &lt;input id=&quot;to-do-title&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; type=&quot;text&quot; &gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/form&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-footer&quot;&gt;
-                                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-students-browse/04-pages-00-career-services-cs-students-browse.html';&quot;&gt;Go&lt;/button&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-
-                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
                                     &lt;!-- Button trigger modal --&gt;
                                     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
                                         New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
-                                    &lt;/button&gt;
+                                    &lt;/button&gt;                                &lt;/div&gt;
 
-                                    &lt;!-- Modal --&gt;
-                                    &lt;div class=&quot;modal fade&quot; id=&quot;new-message-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
-                                        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-                                            &lt;div class=&quot;modal-content&quot;&gt;
-                                                &lt;div class=&quot;modal-header&quot;&gt;
-                                                    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-                                                    &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New Message&lt;/h4&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-body&quot;&gt;
-                                                    &lt;form&gt;
-                                                        &lt;div class=&quot;form-group&quot;&gt;
-                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;
-                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; &gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-group&quot;&gt;
-                                                            &lt;label for=&quot;comment&quot;&gt;Message:&lt;/label&gt;
-                                                            &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Message&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/form&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-footer&quot;&gt;
-                                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;Send&lt;/button&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Contact Later &lt;span class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Save for Later &lt;span class=&quot;fa fa-bookmark&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
                                 &lt;/div&gt;
 
                                 &lt;div class=&quot;col-lg-4&quot;&gt;
@@ -532,6 +515,71 @@
                     &lt;/p&gt;
                 &lt;/footer&gt;
                 &lt;!-- End Footer --&gt;            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;create-to-do-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New To-Do&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;
+                        &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Type:&lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot;&gt;
+                            &lt;option&gt;&lt;/option&gt;
+                            &lt;option&gt;Getting Started&lt;/option&gt;
+                            &lt;option&gt;Career Services&lt;/option&gt;
+                            &lt;option&gt;Job: Medical Assistant - Chicago, IL&lt;/option&gt;
+                            &lt;option&gt;Job: Medical Assistant - Columbus, Ohio&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;to-do-title&quot; class=&quot;control-label&quot;&gt;Task:&lt;/label&gt;
+                        &lt;input id=&quot;to-do-title&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-dashboard/04-pages-00-career-services-cs-dashboard.html';&quot;&gt;Go&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;new-message-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New Message&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To:&lt;/label&gt;
+                        &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;comment&quot;&gt;Message:&lt;/label&gt;
+                        &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Message&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;Send&lt;/button&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

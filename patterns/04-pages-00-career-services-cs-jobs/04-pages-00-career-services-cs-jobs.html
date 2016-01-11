@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
 
 		<!-- global styles -->
-		<link rel="stylesheet" href="../../css/theme/theme_styles.css?1450309035" media="all" />
+		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
 
         <!-- this page specific styles -->
         <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.fixedHeader.css">
@@ -37,8 +37,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1450309035" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1450309035" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -125,6 +125,12 @@
                                         </a>
                                     </li>
                                     <li class="">
+                                        <a href="/patterns/04-pages-00-career-services-cs-rules/04-pages-00-career-services-cs-rules.html">
+                                            <i class="fa fa-exchange"></i>
+                                            <span>Rules</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
                                         <a href="/patterns/04-pages-00-career-services-cs-verification/04-pages-00-career-services-cs-verification.html">
                                             <i class="fa fa-check-circle-o"></i>
                                             <span>Verification</span>
@@ -150,8 +156,24 @@
                 <div class="row">
                     <div class="col-lg-12">
 
+                        <div class="row hidden-lg margin-bottom-16">
+                            <div class="col-xs-4">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    Post Job <span class="fa fa-thumb-tack"></span>
+                                </button>
+                            </div>
+                            <div class="col-xs-4">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                                    Bulk Upload <span class="fa fa-upload"></span>
+                                </button>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-lg-8">
+
                                 <div class="main-box clearfix">
                                     <header class="main-box-header clearfix">
                                         <h2>Manually Entered Jobs</h2>
@@ -213,7 +235,8 @@
                             <div class="col-md-4">
                                         <div class="row">
 
-                                            <div class="col-xs-12">
+
+                                            <div class="col-xs-12 visible-lg">
 
                                                 <!-- Button trigger modal -->
                                                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -297,14 +320,17 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-xs-12 margin-top-20">
+                                            <div class="col-xs-12 margin-top-20 visible-lg">
 
                                                 <!-- Button trigger modal -->
                                                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
                                                     Bulk Upload <span class="fa fa-upload"></span>
                                                 </button>
 
-                                                <!-- Modal -->
+                                            </div>
+
+
+                                            <!-- Modal -->
                                                 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
@@ -333,7 +359,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
 
                                     </div>
                         </div>
@@ -397,10 +422,10 @@ $('#myModal').on('shown.bs.modal', function () {
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1450309035">
+	<script id="pl-js-polyfill-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1450309035';
+				var cb = '0';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -409,10 +434,10 @@ $('#myModal').on('shown.bs.modal', function () {
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1450309035">
+	<script id="pl-js-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1450309035';
+				var cb = '0';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -461,7 +486,6 @@ $('#myModal').on('shown.bs.modal', function () {
 <!-- theme scripts -->
 <script src="../../js/scripts.js"></script>
 <script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script>
-
 
 
 

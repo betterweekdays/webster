@@ -15,6 +15,26 @@
                         &lt;div class=&quot;row&quot;&gt;
                             &lt;div class=&quot;col-lg-8&quot;&gt;
                                 {{&gt; organisms-bdubs-conversation-small }}
+
+                                &lt;div class=&quot;row hidden-lg&quot;&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        {{&gt; organisms-new-message-button }}
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-create-to-do-button }}
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 &quot;&gt;
+                                        {{&gt; organisms-new-note-button }}
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-jump-to-profile-button }}
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        {{&gt; organisms-invite-button }}
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
                                 &lt;div class=&quot;row&quot;&gt;
                                     &lt;div class=&quot;col-md-6&quot;&gt;
                                         &lt;div class=&quot;main-box&quot;&gt;
@@ -51,12 +71,20 @@
                                     &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
                                         &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
                                             &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#overview-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos-tab&quot;&gt;To-Dos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;messages-tab&quot; aria-expanded=&quot;true&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#activity-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;activity-tab&quot; aria-expanded=&quot;true&quot;&gt;My Activity&lt;/a&gt;&lt;/li&gt;
                                             &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#students-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;students-tab&quot; aria-expanded=&quot;true&quot;&gt;Students&lt;/a&gt;&lt;/li&gt;
                                             &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#employers-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;employers-tab&quot;&gt;Employers&lt;/a&gt;&lt;/li&gt;
                                         &lt;/ul&gt;
                                         &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
                                             &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;overview-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
                                                 {{&gt; organisms-to-dos-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;messages-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+                                                {{&gt; organisms-messages-list-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in&quot; id=&quot;activity-tab&quot; aria-labelledBy=&quot;activity-tab&quot;&gt;
+                                                {{&gt; organisms-cs-my-activity }}
                                             &lt;/div&gt;
                                             &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;students-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
 
@@ -90,7 +118,6 @@
                                                     &lt;/div&gt;
 
                                                 &lt;/div&gt;
-
 
                                                 {{&gt; organisms-activity-dashboard-cs }}
                                             &lt;/div&gt;
@@ -134,20 +161,26 @@
                                     &lt;/div&gt;&lt;!-- /example --&gt;
                                 &lt;/div&gt;
                             &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                {{&gt; organisms-new-message }}
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                {{&gt; organisms-create-to-do }}
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                {{&gt; organisms-jump-to-profile }}
-                            &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                {{&gt; organisms-invite }}
+                            &lt;div class=&quot;visible-lg&quot;&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                    {{&gt; organisms-new-message-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                    {{&gt; organisms-create-to-do-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                    {{&gt; organisms-new-note-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                    {{&gt; organisms-jump-to-profile-button }}
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                    {{&gt; organisms-invite-button }}
+                                &lt;/div&gt;
                             &lt;/div&gt;
                             &lt;div class=&quot;col-lg-4&quot;&gt;
                                 {{&gt; organisms-jobs-companies-count }}
+                                {{&gt; organisms-recently-active-students }}
                                 {{&gt; organisms-choose-betterweekday-cs }}
                             &lt;/div&gt;
                         &lt;/div&gt;
@@ -167,3 +200,9 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+
+{{&gt; organisms-new-message-modal }}
+{{&gt; organisms-create-to-do-modal }}
+{{&gt; organisms-new-note-modal }}
+{{&gt; organisms-jump-to-profile-modal }}
+{{&gt; organisms-invite-modal }}

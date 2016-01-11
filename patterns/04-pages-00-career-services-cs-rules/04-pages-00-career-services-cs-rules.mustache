@@ -1,0 +1,187 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-cs-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;col-lg-8&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2&gt;New Rule: Pick a Category&lt;/h2&gt;
+                                    &lt;/header&gt;
+
+                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+
+                                    &lt;!-- Button trigger modal --&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg margin-top-20&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
+                                        Email &lt;span class=&quot;fa fa-envelope&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                    &lt;!-- Modal --&gt;
+                                    &lt;div class=&quot;modal fade&quot; id=&quot;new-message-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+                                        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                                            &lt;div class=&quot;modal-content&quot;&gt;
+                                                &lt;div class=&quot;modal-header&quot;&gt;
+                                                    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                                    &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New Email Rule&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;modal-body&quot;&gt;
+                                                    &lt;form&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Send an email&lt;/label&gt;
+                                                            &lt;select class=&quot;form-control&quot;&gt;
+                                                                &lt;option&gt;&lt;/option&gt;
+                                                                &lt;option&gt;Once&lt;/option&gt;
+                                                                &lt;option&gt;Every time&lt;/option&gt;
+                                                            &lt;/select&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;To&lt;/label&gt;
+                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;When&lt;/label&gt;
+                                                            &lt;select class=&quot;form-control conditional-select&quot;&gt;
+                                                                &lt;option&gt;&lt;/option&gt;
+                                                                &lt;option&gt;Account created&lt;/option&gt;
+                                                                &lt;option&gt;Resume uploaded&lt;/option&gt;
+                                                                &lt;option&gt;Profile updated&lt;/option&gt;
+                                                                &lt;option&gt;Job viewed&lt;/option&gt;
+                                                                &lt;option&gt;Interested in a job&lt;/option&gt;
+                                                            &lt;/select&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group conditional-select-field&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;For job&lt;/label&gt;
+                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Job title&quot; type=&quot;text&quot; &gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;modal-footer&quot;&gt;
+                                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;Send&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+                                    &lt;!-- Button trigger modal --&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg margin-top-20&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-to-do-modal&quot;&gt;
+                                        To-Do &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                    &lt;!-- Modal --&gt;
+                                    &lt;div class=&quot;modal fade&quot; id=&quot;create-to-do-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+                                        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+                                            &lt;div class=&quot;modal-content&quot;&gt;
+                                                &lt;div class=&quot;modal-header&quot;&gt;
+                                                    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                                    &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New To-Do Rule&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;modal-body&quot;&gt;
+                                                    &lt;form&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Create to-do item&lt;/label&gt;
+                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Title of to-do&quot; type=&quot;text&quot; &gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;For&lt;/label&gt;
+                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;When&lt;/label&gt;
+                                                            &lt;select class=&quot;form-control conditional-select-2&quot;&gt;
+                                                                &lt;option&gt;&lt;/option&gt;
+                                                                &lt;option&gt;Account created&lt;/option&gt;
+                                                                &lt;option&gt;Resume uploaded&lt;/option&gt;
+                                                                &lt;option&gt;Profile updated&lt;/option&gt;
+                                                                &lt;option&gt;Job viewed&lt;/option&gt;
+                                                                &lt;option&gt;Interested in a job&lt;/option&gt;
+                                                            &lt;/select&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;form-group conditional-select-field-2&quot;&gt;
+                                                            &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;For job&lt;/label&gt;
+                                                            &lt;input id=&quot;recipient-name&quot; class=&quot;form-control&quot; placeholder=&quot;Job title&quot; type=&quot;text&quot; &gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;modal-footer&quot;&gt;
+                                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-cs-students-browse }}';&quot;&gt;Go&lt;/button&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;col-lg-8&quot;&gt;
+                            &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2&gt;Active Rules&lt;/h2&gt;
+                                    &lt;/header&gt;
+
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+
+                                    &lt;div class=&quot;table-responsive&quot;&gt;
+                                        &lt;table id=&quot;table-activity&quot; class=&quot;table table-hover&quot;&gt;
+                                            &lt;thead&gt;
+                                            &lt;tr&gt;
+                                                &lt;th&gt;Title&lt;/th&gt;
+                                                &lt;th&gt;Actions&lt;/th&gt;
+                                            &lt;/tr&gt;
+                                            &lt;/thead&gt;
+                                            &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;When &lt;a href=&quot;{{link.pages-cs-student-profile }}&quot;&gt;Sonya Frost&lt;/a&gt; uploads a resume, send me an email&lt;/a&gt;&lt;/td&gt;
+                                                &lt;td&gt;&lt;a href=&quot;#&quot; data-target=&quot;#create-to-do-modal&quot; data-toggle=&quot;modal&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;When &lt;a href=&quot;#&quot;&gt;Monsanto&lt;/a&gt; views a student profile, send me an email&lt;/a&gt;&lt;/td&gt;
+                                                &lt;td&gt;&lt;a href=&quot;#&quot; data-target=&quot;#create-to-do-modal&quot; data-toggle=&quot;modal&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;When any student views the &lt;a href=&quot;{{link.pages-cs-job-posting }}&quot;&gt;Phlebotomist&lt;/a&gt; position, create a to-do with title &quot;reach out to them&quot;&lt;/a&gt;&lt;/td&gt;
+                                                &lt;td&gt;&lt;a href=&quot;#&quot; data-target=&quot;#create-to-do-modal&quot; data-toggle=&quot;modal&quot;&gt;Edit&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Delete&lt;/a&gt;&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/div&gt;
+
+                                        &lt;/div&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+
+
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

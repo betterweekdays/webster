@@ -1,0 +1,169 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-cs-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
+                                &lt;div class=&quot;row&quot;&gt;
+                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                        &lt;div class=&quot;main-box&quot;&gt;
+                                            &lt;div class=&quot;row&quot;&gt;
+                                                &lt;div class=&quot;col-md-12&quot;&gt;
+                                                    &lt;div class=&quot;graph-box&quot;&gt;
+                                                        &lt;h2&gt;Percentage of Students&lt;br /&gt;Signed Up&lt;/h2&gt;
+                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot;&gt;
+                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                        &lt;div class=&quot;main-box&quot;&gt;
+                                            &lt;div class=&quot;row&quot;&gt;
+                                                &lt;div class=&quot;col-md-12&quot;&gt;
+                                                    &lt;div class=&quot;graph-box&quot;&gt;
+                                                        &lt;h2 class=&quot;orange&quot;&gt;Week over Week&lt;br /&gt;Change in Percentage of Sign Ups&lt;/h2&gt;
+                                                        &lt;div class=&quot;graph&quot; id=&quot;graph-line-2&quot; style=&quot;max-height: 335px; position: relative;&quot;&gt;
+                                                            &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                                    &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                        &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                            &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#overview-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos-tab&quot;&gt;To-Dos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#students-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;students-tab&quot; aria-expanded=&quot;true&quot;&gt;Students&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#employers-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;employers-tab&quot;&gt;Employers&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;overview-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
+                                                {{&gt; organisms-to-dos-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;students-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+
+                                                &lt;div class=&quot;row&quot;&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;red&quot;&gt;Average Daily&lt;br /&gt; Student Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-3&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                        &lt;h2 class=&quot;purple&quot;&gt;Week over Week Change&lt;br /&gt; in Average Daily Student Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-4&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+
+
+                                                {{&gt; organisms-activity-dashboard-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;employers-tab&quot; aria-labelledBy=&quot;engagement-tab&quot;&gt;
+
+                                                &lt;div class=&quot;row&quot;&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;red&quot;&gt;Average Daily&lt;br /&gt; Employer Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-5&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+
+                                                    &lt;div class=&quot;col-md-6&quot;&gt;
+
+                                                        &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                                            &lt;h2 class=&quot;purple&quot;&gt;Week over Week Change&lt;br /&gt; in Average Daily Employer Interactions&lt;/h2&gt;
+                                                        &lt;/header&gt;
+
+                                                        &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                            &lt;div class=&quot;graph&quot; id=&quot;graph-line-6&quot; style=&quot;max-height: 335px;&quot;&gt;
+                                                                &lt;div class=&quot;morris-hover morris-default-style&quot; style=&quot;display: none;&quot;&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+
+                                                    &lt;/div&gt;
+
+                                                &lt;/div&gt;
+
+
+                                                {{&gt; organisms-activity-dashboard-cs-employer }}
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;&lt;!-- /example --&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-new-message }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-create-to-do }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-jump-to-profile }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                {{&gt; organisms-invite }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4&quot;&gt;
+                                {{&gt; organisms-jobs-companies-count }}
+                                {{&gt; organisms-choose-betterweekday-cs }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12 hidden&quot;&gt;
+                                {{&gt; molecules-morris-pie-chart }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

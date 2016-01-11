@@ -6798,4 +6798,28 @@ p, ul li, label, .radio label, select {
 .bdubs-box {
   padding: 0 !important; }
 
+.conditional-select-field,
+.conditional-select-field-2 {
+  display: none; }
+
+.verified-title {
+  padding-top: 24px !important;
+  font-size: 16px !important;
+  float: right;
+  margin-right: 20px !important; }
+
+.table-verification tbody > tr > td {
+  font-size: 14px;
+  width: 50%; }
+.table-verification tbody > tr > td:first-child {
+  font-size: 14px;
+  text-align: right; }
+
+.main-box.card.card-image {
+  padding: 20px; }
+  .main-box.card.card-image img {
+    width: 100%;
+    margin: 0;
+    max-width: none !important; }
+
 /*# sourceMappingURL=theme_styles.css.map */

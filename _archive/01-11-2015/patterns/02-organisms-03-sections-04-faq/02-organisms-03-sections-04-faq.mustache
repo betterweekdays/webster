@@ -1,0 +1,27 @@
+&lt;div class=&quot;main-box clearfix&quot;&gt;
+    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+        &lt;h2&gt;{{ faq-title }}&lt;/h2&gt;
+    &lt;/header&gt;
+
+    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+        &lt;div class=&quot;panel-group accordion&quot; id=&quot;accordion&quot;&gt;
+            {{# faq }}
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h4 class=&quot;panel-title&quot;&gt;
+                            &lt;a class=&quot;accordion-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse{{ collapse }}}&quot;&gt;
+                                {{ question }}
+                            &lt;/a&gt;
+                        &lt;/h4&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;collapse{{ collapse }}&quot; class=&quot;panel-collapse collapse&quot;&gt;
+                        &lt;div class=&quot;panel-body&quot;&gt;
+                            {{ answer }}
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            {{/faq}}
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;

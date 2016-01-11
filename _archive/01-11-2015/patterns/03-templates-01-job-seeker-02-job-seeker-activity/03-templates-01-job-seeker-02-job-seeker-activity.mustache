@@ -1,0 +1,85 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header }}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;nav-col&quot;&gt;
+                &lt;section id=&quot;col-left&quot; class=&quot;col-left-nano&quot;&gt;
+                    &lt;div id=&quot;col-left-inner&quot; class=&quot;col-left-nano-content&quot;&gt;
+                        {{&gt; molecules-left-nav }}
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-8&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                    &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+                                        &lt;h2&gt;My Activity&lt;/h2&gt;
+                                    &lt;/header&gt;
+
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        &lt;div class=&quot;row&quot;&gt;
+                                            &lt;div class=&quot;form-group col-md-4&quot;&gt;
+                                                &lt;label for=&quot;datepickerDateRange&quot;&gt;Date range&lt;/label&gt;
+                                                &lt;div class=&quot;input-group&quot;&gt;
+                                                    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                                                    &lt;input class=&quot;form-control&quot; id=&quot;datepickerDateRange&quot; type=&quot;text&quot;&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;table-responsive&quot;&gt;
+                                            &lt;table id=&quot;table-activity&quot; class=&quot;table table-hover&quot;&gt;
+                                                &lt;thead&gt;
+                                                &lt;tr&gt;
+                                                    &lt;th&gt;Date&lt;/th&gt;
+                                                    &lt;th&gt;Activity&lt;/th&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/thead&gt;
+                                                &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 10:00am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;Uploaded Resume&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 09:59am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;Viewed Job - &lt;a href=&quot;{{ link.pages-j-posting }}&quot;&gt;Awesome Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 09:59am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;&lt;span class=&quot;fa fa-thumbs-up&quot;&gt; Me&lt;/span&gt; - &lt;a href=&quot;{{ link.pages-j-posting }}&quot;&gt;Awesome Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 09:58am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;&lt;span class=&quot;fa fa-thumbs-down&quot;&gt; Not Me&lt;/span&gt; - &lt;a href=&quot;{{ link.pages-j-posting }}&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 09:58am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;Previewed Job - &lt;a href=&quot;{{ link.pages-j-posting }}&quot;&gt;Medical Assistant&lt;/a&gt;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;10/08/2015 - 09:58am&lt;/td&gt;
+                                                    &lt;td class=&quot;headline&quot;&gt;Previewed Job - &lt;a href=&quot;{{ link.pages-j-posting }}&quot;&gt;Medical Assistant II&lt;/a&gt;&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/tbody&gt;
+                                            &lt;/table&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4&quot;&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;

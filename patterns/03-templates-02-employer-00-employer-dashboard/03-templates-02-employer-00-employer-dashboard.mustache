@@ -12,11 +12,32 @@
             &lt;div id=&quot;content-wrapper&quot;&gt;
                 &lt;div class=&quot;row&quot;&gt;
                     &lt;div class=&quot;col-lg-12&quot;&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;div class=&quot;col-lg-12 hidden-lg&quot;&gt;
+
+                                &lt;div class=&quot;margin-bottom-16&quot;&gt;
+
+                                    &lt;!-- Button trigger modal --&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
+                                        Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; onclick=&quot;window.location='{{ link.pages-cs-reports }}';&quot;&gt;
+                                        Find Job Seekers &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+
+                                &lt;/div&gt;
+                                {{&gt; organisms-bdubs-conversation-small }}
+
+                            &lt;/div&gt;
+                        &lt;/div&gt;
                         &lt;div class=&quot;row&quot;&gt;
                             &lt;div class=&quot;col-lg-8&quot;&gt;
-                                &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                &lt;div class=&quot;main-box clearfix&quot; style=&quot;margin-bottom:0;&quot;&gt;
                                     &lt;h1&gt;BJC Healthcare&lt;/h1&gt;
                                 &lt;/div&gt;
+
                                 &lt;!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... --&gt;
 
                                 &lt;div class=&quot;graph&quot; id=&quot;graph-line-1&quot; style=&quot;display:none;&quot;&gt;
@@ -77,12 +98,43 @@
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
-                                {{&gt; organisms-jobs-dashboard-employer }}
+
+
+                                &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                                    &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                        &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                            &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#to-dos-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;to-dos-tab&quot;&gt;To-Dos&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#engagement-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;engagement-tab&quot; aria-expanded=&quot;true&quot;&gt;Engagement&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#messages-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;messages-tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#jobs-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;jobs-tab&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active&quot; id=&quot;to-dos-tab&quot; aria-labelledBy=&quot;to-dos-tab&quot;&gt;
+                                                {{&gt; organisms-to-dos-employer-cs }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;messages-tab&quot; aria-labelledBy=&quot;messages-tab&quot;&gt;
+                                                {{&gt; organisms-messages-list }}
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;engagement-tab&quot; aria-labelledBy=&quot;engagement-tab&quot;&gt;
+                                                &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
+                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Was last active &lt;strong&gt;3 days ago&lt;/strong&gt;.&lt;/li&gt;
+                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Viewed &lt;strong&gt;&lt;a href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;/strong&gt; students&lt;/li&gt;
+                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Received &lt;strong&gt;&lt;a href=&quot;#&quot;&gt;8&lt;/a&gt;&lt;/strong&gt; applications&lt;/li&gt;
+                                                    &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Completed &lt;strong&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/strong&gt; to-dos.&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                                            &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade&quot; id=&quot;jobs-tab&quot; aria-labelledBy=&quot;jobs-tab&quot;&gt;
+                                                {{&gt; organisms-jobs-dashboard-employer }}
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
                             &lt;/div&gt;
                             &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
 
                                 &lt;!-- Button trigger modal --&gt;
-                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#jump-to-profile-modal&quot;&gt;
                                     Jump to Profile &lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;
                                 &lt;/button&gt;
 
@@ -111,12 +163,24 @@
                                 &lt;/div&gt;
                             &lt;/div&gt;
                             &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; onclick=&quot;window.location='{{ link.pages-cs-reports }}';&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg visible-lg&quot; onclick=&quot;window.location='{{ link.pages-cs-reports }}';&quot;&gt;
                                     Find Job Seekers &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
                                 &lt;/button&gt;
                             &lt;/div&gt;
-                            &lt;div class=&quot;col-lg-4&quot;&gt;
+                            &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
                                 {{&gt; organisms-bdubs-conversation-small }}
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
+                                &lt;div class=&quot;main-box&quot;&gt;
+                                    &lt;h2&gt;Recent Activity&lt;/h2&gt;
+                                    &lt;div class=&quot;main-box-body clearfix margin-top-20&quot;&gt;
+                                        &lt;div class=&quot;col-sm-12&quot;&gt;
+
+                                            {{&gt; organisms-employer-recent-activity }}
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
 

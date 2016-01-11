@@ -20,6 +20,28 @@
                                         &lt;h1&gt;{{ title }}&lt;/h1&gt;
                                     &lt;/div&gt;
 
+                                    &lt;div class=&quot;row hidden-lg&quot;&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        {{&gt; organisms-create-to-do-button }}
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        {{&gt; organisms-new-message-button }}
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16 text-right&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg text-right&quot;&gt;
+                                            Contact Later &lt;span class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class=&quot;col-xs-6 margin-bottom-16&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                            Save for Later &lt;span class=&quot;fa fa-bookmark&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;/div&gt;
+
                                     &lt;div class=&quot;row&quot;&gt;
                                         &lt;div class=&quot;col-lg-6&quot;&gt;
                                             &lt;div class=&quot;main-box card&quot;&gt;
@@ -86,12 +108,24 @@
 
                                 &lt;/div&gt;
 
-                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                    {{&gt; organisms-create-to-do }}
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    {{&gt; organisms-create-to-do-button }}
                                 &lt;/div&gt;
 
-                                &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
-                                    {{&gt; organisms-new-message }}
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    {{&gt; organisms-new-message-button }}
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Contact Later &lt;span class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
+                                        Save for Later &lt;span class=&quot;fa fa-bookmark&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
                                 &lt;/div&gt;
 
                                 &lt;div class=&quot;col-lg-4&quot;&gt;
@@ -116,3 +150,6 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+
+{{&gt; organisms-create-to-do-modal }}
+{{&gt; organisms-new-message-modal }}

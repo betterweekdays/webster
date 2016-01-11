@@ -1,0 +1,12 @@
+&lt;form role=&quot;form&quot; action=&quot;{{ link.pages-l-register }}&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+        {{#campus}}
+            {{&gt; atoms-select-list }}
+        {{/campus}}
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-success col-xs-12&quot; onclick=&quot;window.location='{{ link.pages-l-register }}';&quot;&gt;{{ signButtonText }}&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;

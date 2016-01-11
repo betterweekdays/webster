@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>Carousel Pediatrics</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- bootstrap -->
+        <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
+
+        <!-- libraries -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
+
+		<!-- global styles -->
+		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
+
+        <!-- this page specific styles -->
+
+        <!-- google font libraries -->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/respond.min.js"></script>
+        <![endif]-->
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="home" id="">
+		
+<div id="theme-wrapper" class="card-posting">
+    <!-- Begin .header -->
+    <header class="navbar" id="header-navbar">
+        <div class="container">
+            <a href="#" id="logo" class="navbar-brand">
+                <img src="../../../img/bw_logo_white.png" alt="" class="normal-logo logo-white">
+                <img src="../../../img/bw_logo_grey.png" alt="" class="normal-logo logo-black">
+                <img src="../../../img/bw_logo_grey.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+            </a>
+
+            <div class="clearfix">
+                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                    <span class="x-small">Menu</span>
+                </button>
+
+                <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+                    <ul class="nav navbar-nav pull-left">
+                        <li>
+                            <a class="btn" id="make-small-nav">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-no-collapse pull-right" id="header-nav">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#"><span>My Awesome Organization</span></a>
+                        </li>
+                        <li class="dropdown profile-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="hidden-xs">john@email.com</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End .header -->    <div id="page-wrapper" class="container">
+        <div class="row">
+            <div id="nav-col">
+                <section id="col-left" class="col-left-nano">
+                    <div id="col-left-inner" class="col-left-nano-content">
+                            <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+                                <ul class="nav nav-pills nav-stacked">
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-dashboard/04-pages-00-career-services-cs-dashboard.html">
+                                                <i class="fa fa-dashboard"></i>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-reports/04-pages-00-career-services-cs-reports.html">
+                                                <i class="fa fa-list"></i>
+                                                <span>Reports</span>
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="/patterns/04-pages-00-career-services-cs-student-activity/04-pages-00-career-services-cs-student-activity.html">
+                                                <i class="fa fa-heartbeat"></i>
+                                                <span>Activity</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-jobs/04-pages-00-career-services-cs-jobs.html">
+                                                <i class="fa fa-briefcase"></i>
+                                                <span>Jobs</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-rules/04-pages-00-career-services-cs-rules.html">
+                                                <i class="fa fa-exchange"></i>
+                                                <span>Rules</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-verification/04-pages-00-career-services-cs-verification.html">
+                                                <i class="fa fa-check-circle-o"></i>
+                                                <span>Verification</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-00-career-services-cs-resources/04-pages-00-career-services-cs-resources.html">
+                                                <i class="fa fa-info-circle"></i>
+                                                <span>Help &amp; Resources</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/patterns/04-pages-05-landing-l-login/04-pages-05-landing-l-login.html">
+                                                <i class="fa fa-power-off"></i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                </ul>
+                            </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="content-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="posting-wrapper">
+                                <div class="col-lg-8">
+                                    <div class="main-box clearfix">
+                                        <h1>Carousel Pediatrics</h1>
+                                    </div>
+
+                                    <div class="margin-bottom-16 hidden-lg">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#create-to-do-modal">
+                                            New To-Do <span class="fa fa-plus"></span>
+                                        </button>                                    </div>
+
+                                    <div class="margin-bottom-16 hidden-lg">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-message-modal">
+                                            New Message <span class="fa fa-send"></span>
+                                        </button>                                    </div>
+
+                                    <div class="hidden-lg">
+                                        <div class="main-box clearfix">
+                                            <div class="main-box-body clearfix bdubs-box">
+                                                <div class="conversation-wrapper">
+                                                    <div class="conversation-content">
+                                                        <div class="conversation-inner">
+
+
+                                                            <div class="conversation-item item-left clearfix">
+                                                                <div class="conversation-user">
+                                                                    <img src="../../img/robot50x50.png" alt=""/>
+                                                                </div>
+                                                                <div class="conversation-body">
+                                                                    <div class="name">
+                                                                        BDubs Bot
+                                                                    </div>
+                                                                    <div class="headline text">
+                                                                            <p>My user research has shown that it's important to maintain regular contact with employers.</p>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="main-box card">
+                                                <h2>Contact Information</h2>
+                                                <div class="main-box-body clearfix">
+                                                    <div class="col-sm-12">
+                                                        <ul class="fa-ul no-padding no-image">
+                                                            <li><i class="fa-li"></i>Name: <strong>Joshua Thomas</strong></li>
+                                                            <li><i class="fa-li"></i>Email: <a href="#">hiring@carouselpediatrics.com</a></li>
+                                                            <li><i class="fa-li"></i>Phone: <strong>(312) 999-9999</strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="main-box card-orange card">
+                                                <h2>Hiring Preferences</h2>
+                                                <div class="main-box-body clearfix">
+                                                    <div class="col-sm-12">
+                                                        <ul class="fa-ul no-padding no-image">
+                                                            <li><i class="fa-li"></i>Job Areas: <strong>Hospital Management / Medical Technician</strong></li>
+                                                            <li><i class="fa-li"></i>Locations: <strong>St. Louis, MO</strong></li>
+                                                            <li><i class="fa-li"></i>Experience: <strong>1-2 Years</strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-box tab-box minimal-tabs">
+                                        <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                                            <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#to-dos-tab" role="tab" data-toggle="tab" aria-controls="to-dos-tab">To-Dos</a></li>
+                                                <li role="presentation"><a href="#engagement-tab" role="tab" data-toggle="tab" aria-controls="engagement-tab" aria-expanded="true">Engagement</a></li>
+                                                <li role="presentation"><a href="#messages-tab" role="tab" data-toggle="tab" aria-controls="messages-tab">Messages</a></li>
+                                                <li role="presentation"><a href="#jobs-tab" role="tab" data-toggle="tab" aria-controls="jobs-tab">Jobs</a></li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade in active" id="to-dos-tab" aria-labelledBy="to-dos-tab">
+                                                    <div class="main-box-body clearfix">
+                                                        <ul class="list-group to-dos">
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-users"></i> Students</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-10">Review <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost's resume</a></div>
+                                                                <div class="col-sm-1 col-xs-2"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-10">Respond to <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">John Smith's</a> message</div>
+                                                                <div class="col-sm-1 col-xs-2"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-thumb-tack"></i> Getting Started</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-8">Contact at least 5 students</div>
+                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-life-saver"></i> Career Services</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-8">Respond to pending messages</div>
+                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-8">Review applicants</div>
+                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-rocket"></i> Jobs</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-8">Add salary information for <a href="../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html"><strong>Medical Assistant</strong></a></div>
+                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-sm-10 col-xs-8">Post 5 jobs</div>
+                                                                <div class="col-sm-1 col-xs-2 text-right"></div>
+                                                                <div class="col-sm-1 col-xs-2">
+                                                                    <button class="btn btn-success" title="Done!">
+                                                                        <i class="fa fa-check"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="messages-tab" aria-labelledBy="messages-tab">
+                                                    <div class="pull-right">
+                                                        <span class="badge badge-warning">recommendation</span>
+                                                            <span class="badge badge-success">sent</span>
+                                                            <span class="badge">not viewed</span>
+                                                            <span class="badge">not clicked</span>
+                                                    </div>
+
+                                                    <p>12/07/2015</p>
+                                                    <p><a href="../../patterns/04-pages-02-employer-e-student-profile/04-pages-02-employer-e-student-profile.html">Jane Frost</a></p>
+
+                                                    <hr />
+
+                                                    <div class="pull-right">
+                                                        <span class="badge badge-primary">email</span>
+                                                            <span class="badge badge-success">sent</span>
+                                                            <span class="badge">not viewed</span>
+                                                            <span class="badge">not clicked</span>
+                                                    </div>
+
+                                                    <p>12/03/2015<br />From: John Smith</p>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                                    <hr />
+
+                                                    <div class="pull-right">
+                                                        <span class="badge badge-info">invite</span>
+                                                            <span class="badge badge-success">sent</span>
+                                                            <span class="badge">not viewed</span>
+                                                            <span class="badge">not clicked</span>
+                                                    </div>
+
+                                                    <p>12/01/2015</p>
+                                                    <p>Create Better Weekdays Account</p>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="engagement-tab" aria-labelledBy="engagement-tab">
+                                                    <ul class="fa-ul no-padding no-image">
+                                                        <li><i class="fa-li"></i>Was last active <strong>3 days ago</strong>.</li>
+                                                        <li><i class="fa-li"></i>Viewed <strong><a href="#">13</a></strong> students</li>
+                                                        <li><i class="fa-li"></i>Received <strong><a href="#">8</a></strong> applications</li>
+                                                        <li><i class="fa-li"></i>Completed <strong><a href="#">4</a></strong> to-dos.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="jobs-tab" aria-labelledBy="jobs-tab">
+                                                    <div class="main-box-body clearfix">
+                                                        <ul class="list-group to-dos">
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-thumb-tack"></i> Manually Added</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-xs-3">
+                                                                    1 day ago
+                                                                </div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant</a></div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-xs-3">
+                                                                    2 days ago
+                                                                </div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Awesome Medical Assistant</a></div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item to-do-item-title">
+                                                                <strong><i class="fa fa-star"></i> BW Feed</strong>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-xs-3">
+                                                                    1 day ago
+                                                                </div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant I</a></div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col-xs-3">
+                                                                    6 days ago
+                                                                </div>
+                                                                <div class="col-xs-9"><a href="../../patterns/04-pages-02-employer-e-job-posting/04-pages-02-employer-e-job-posting.html">Medical Assistant II</a></div>
+                                                                <div class="clear"></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-4 margin-bottom-16 visible-lg">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#create-to-do-modal">
+                                        New To-Do <span class="fa fa-plus"></span>
+                                    </button>                                </div>
+
+                                <div class="col-lg-4 margin-bottom-16 visible-lg">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-message-modal">
+                                        New Message <span class="fa fa-send"></span>
+                                    </button>                                </div>
+
+                                <div class="col-lg-4 visible-lg">
+                                    <div class="main-box clearfix">
+                                        <div class="main-box-body clearfix bdubs-box">
+                                            <div class="conversation-wrapper">
+                                                <div class="conversation-content">
+                                                    <div class="conversation-inner">
+
+
+                                                        <div class="conversation-item item-left clearfix">
+                                                            <div class="conversation-user">
+                                                                <img src="../../img/robot50x50.png" alt=""/>
+                                                            </div>
+                                                            <div class="conversation-body">
+                                                                <div class="name">
+                                                                    BDubs Bot
+                                                                </div>
+                                                                <div class="headline text">
+                                                                        <p>My user research has shown that it's important to maintain regular contact with employers.</p>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    <div class="main-box">
+                                        <h2>Recent Activity</h2>
+                                        <div class="main-box-body clearfix margin-top-20">
+                                            <div class="col-sm-12">
+
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            3 days ago
+                                                        </div>
+                                                        <div class="col-xs-8"><a href="#">Viewed <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost</a></div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            3 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Viewed <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Sonya Frost</a> profile</div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            3 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Viewed <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Bobby Jobs</a></div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            3 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Wants to interview <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Bobby Jobs</a></div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            4 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Messaged <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Bobby Jobs</a></div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            4 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Updated their company profile</div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            4 days ago
+                                                        </div>
+                                                        <div class="col-xs-8">Task Done - Are you attending the Career Fair? - Response: Yes</div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col-xs-4">
+                                                            5 days ago
+                                                        </div>
+                                                        <div class="col-xs-8"><a href="#">Messaged <a href="../../patterns/04-pages-00-career-services-cs-student-profile/04-pages-00-career-services-cs-student-profile.html">Jane Frost</a></div>
+                                                        <div class="clear"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Begin Footer -->
+                <footer id="footer-bar" class="row">
+                    <p id="footer-copyright" class="col-xs-12">
+                        &copy; 2015 <a href="http://www.betterweekdays.com/" target="_blank">Better Weekdays</a>. All rights reserved.
+                    </p>
+                </footer>
+                <!-- End Footer -->            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="create-to-do-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">New To-Do</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">To:</label>
+                        <input id="recipient-name" class="form-control" placeholder="Name or Email" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Type:</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option>Getting Started</option>
+                            <option>Career Services</option>
+                            <option>Job: Medical Assistant - Chicago, IL</option>
+                            <option>Job: Medical Assistant - Columbus, Ohio</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-do-title" class="control-label">Task:</label>
+                        <input id="to-do-title" class="form-control" placeholder="" type="text" >
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info" onclick="window.location='../../patterns/04-pages-00-career-services-cs-dashboard/04-pages-00-career-services-cs-dashboard.html';">Go</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="new-message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">New Message</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">To:</label>
+                        <input id="recipient-name" class="form-control" placeholder="Name" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Message:</label>
+                        <textarea class="form-control" placeholder="Message" rows="5" id="comment"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--DO NOT REMOVE-->
+	
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "pages-cs-employer-profile";
+		var lineage        = [{"lineagePattern":"templates-employer-profile","lineagePath":"..\/..\/patterns\/03-templates-02-employer-01-employer-profile\/03-templates-02-employer-01-employer-profile.html"}];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+<!-- intercom -->
+<script>
+    window.intercomSettings = {
+        app_id: "c8ondh7h",
+        name: "Nikola Tesla", // Full name
+        email: "nikola@example.com" // Email address
+    };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.4/javascripts/jquery.nanoscroller.min.js"></script>
+
+<!-- this page specific scripts -->
+
+
+
+
+
+<!-- theme scripts -->
+<script src="../../js/scripts.js"></script>
+<script src="//raw.githubusercontent.com/HubSpot/pace/v0.5.6/pace.min.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
